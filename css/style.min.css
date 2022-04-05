@@ -3,9 +3,89 @@
  * https://gettemplates.co/roxy
  */
  
+/* Animation */
+.so-widget-steps-widget-steps-style-d75171398898-5031 .steps {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-100px * 7))}
+}
+.so-widget-steps-widget-steps-style-d75171398898-5031 .steps--center {
+  justify-content: center;
+}
+
+/*  Styling  */
+#logos-home-page .slider {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#logos-home-page .slider:before,#logos-home-page .slider:after {
+		background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 10;
+	}
+	
+#logos-home-page .slider:after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(50deg);
+	}
+
+#logos-home-page .slider:before {
+		left: 0;
+		top: 0;
+	}
+	#logos-home-page .slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+#logos-home-page div.slide {
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right; }
+
+
+
+
+ 
+ .img-responsivee{
+   width: 63%;
+ }
+ .cmargbottom {
+  margin-bottom: 30px !important;
+}
+.center {
+  text-align: center !important;
+}
+.pixel18 {
+  font-size: 18px !important;
+}
+.grey-light {
+  color: #8A9299 !important;
+}
 html, body {
   width: 100%;
   overflow-x: hidden; }
+  .img-responsive{
+    width: 100%;
+  }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -149,7 +229,7 @@ section {
   color: #000; }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: rgb(127, 7, 131);
   transition: .3s ease; }
 
 .navbar-nav:hover li a {
