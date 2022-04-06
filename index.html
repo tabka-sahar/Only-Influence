@@ -21,6 +21,10 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+    
+  
 
     <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,12 +34,30 @@
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+              <h4 class="modal-title">Vous voulez télécharger le livre blanc?</h4>
+            </div>
+           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Oui</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
 </head>
+
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
+ 
     
 	<nav style = "background-color:aliceblue;" id="header-navbar" class="navbar navbar-expand-lg py-4">
        
@@ -44,7 +66,7 @@
     <div class="container">
         <img  style = "width: 15%;margin-left: -20%;"src="img/logo 2.png" alt="">
         <!-- <div style = "margin-left: 60%" class="box">
-            <div 
+            <div style = "margin-left:-60%"
             class="allTime">
             <h4>Evènement commence dans </h4>
             
@@ -56,7 +78,7 @@
                 <div class="wp min"></div>
                 <div class="wp sec"></div>
             </div>
-            <button  type="button" class="btn btn-outline-primary">s'inscrire</button>
+            <p style = "margin-left:-30%;margin-top: 10%;font-family: helvetica;"> <a  href = #features >S'inscrire</a></p>
 
 
         </div> -->
@@ -72,6 +94,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Accueil</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#qui">Qui sommes nous</a>
+                </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li> -->
@@ -81,6 +106,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#reservation">Contact</a>
                 </li>
+               
                 <!-- <li class="nav-item">
                     <a id="side-search-open" class="nav-link" href="#">
                         <span class="lnr lnr-magnifier"></span>
@@ -168,12 +194,12 @@
 	<div class="jumbotron d-flex align-items-center">
         <div class="text-box">
             <h1 class="heading-primary">
-             <span class="heading-primary-main">Only Influence</span>
+             <span style = "font-family: helvetica;"class="heading-primary-main">Only Influence</span>
               <h2 class="heading-primary-sub">Votre Solution D'influence <br> Marketing</h2>
              </h1>
              <div>
-                <p style = "margin-left:-30%;margin-top: 10%;"> <a  href = #features class="w3-button w3-pink">Je suis une marque</a></p>
-                  <p style = "margin-left:10%;margin-top: -5.5%;"><a href = influenceurs.html class="w3-button w3-pink">Je suis influenceur</a></p>
+                <p style = "margin-left:-30%;margin-top: 10%;font-family: helvetica;"> <a  href = #features class="w3-button w3-deep-purple">Je suis une marque</a></p>
+                  <p style = "margin-left:10%;margin-top: -5.5%;"><a href = influenceurs.html class="w3-button w3-deep-purple">Je suis influenceur</a></p>
                  
                  </div>
 
@@ -207,17 +233,28 @@
         <div class="section-content">
             <!-- Section Title -->
             <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class=" center subtitle-width" id = "qui">
+                    Qui sommes nous?
+                    <br></br>
+                    <br></br>
+                    
+                    <img style = "margin-right:50%;width:45%;height:45%;" alt="DES CONTENUS RÉSEAUX SOCIAUX" src="https://assets-global.website-files.com/60d304c04a4fa6dc684afabc/61b1c8720078da872be65c0a_618d21b72f0c17fc42c9febb_AgencePlateforme.png">
+
+
             
-                <h2 class="section-title">
-                    Only Inluence est la plateforme d'influence marketing idéale pour les marques qui souhaitent entrer en contact en trois clics avec une communauté de plus de 40k influenceurs et 300k consommateurs.
-                </h2>
+                <h5 style = "margin-left:54%;margin-top:-25%;font-family: CMU-serif;;line-height:41px"class="section-title">
+                    Only Influence est une agence de marketing d'influence, élaborant des stratégies advertising complètes du concept à l'execution . Elle inclut des influenceurs nationaux de pemier plan qui ont contribué à lancer des marques mondiales sur le marché tunisien.
+                    <!-- Only Inluence est la plateforme d'influence marketing idéale pour les marques qui souhaitent entrer en contact en trois clics avec une communauté de plus de 40k influenceurs et 300k consommateurs. -->
+                </h5>
+                <br></br> 
+                <br></br> 
                 <br></br> 
                 <br></br> 
                 <div class = "marque">
-                <h2 class="center">
+                <h2 class=" center subtitle-width">
                     Choisissez votre campagne
                     </h2>
-                    <h5 class="section-title">
+                    <h5 style = "font-family: CMU-serif;line-height:41px" class="section-title">
                         Only Influence connecte les marques, selon leurs objectifs, à des influenceurs aux audiences engagées, dans le but de produire des avis produits authentiques sur les réseaux sociaux ou sur des plateformes e-commerce. 
                         Découvrez nos solutions en fonction de votre challenge actuel :
                     </h5>
@@ -227,13 +264,14 @@
                 <div class="pixel16 pink-light uppercase">
                 <p style = "color:rgb(155, 20, 101)">DES CONTENUS RÉSEAUX SOCIAUX</p>
                 </div>
-                <h2>
+                <h2 class=" center subtitle-width">
                 Augmentez votre visibilité
                 </h2>
                 <p class="text-block">
                 Touchez jusqu'à 3 milliards de nouveaux clients potentiels en mobilisant des nano-, micro- et macro-influenceurs engagés à parler de votre marque auprès de leur communauté sur YouTube, Instagram (UGC) et TikTok.
                 </p>
-                <button class="w3-button w3-pink">Ca m'interesse</button></p>        
+                <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-indigo">Ca m'interesse</a></p>
+            </p>        
                 <br></br>
                 
                 <div class="clearfix">
@@ -244,7 +282,7 @@
                     <div class="pixel16 pink-light uppercase">
                         <p style = "color:rgb(155, 20, 101)">DES EVENEMENTS</p>
                     </div>
-                    <h2>
+                    <h2 class=" center subtitle-width">
                     Faites grandir votre communauté
                     </h2>
                     <p class="text-block">
@@ -252,7 +290,8 @@
                     </p>
                     <div class="bpadtop">
                     </p>
-                    <button class="w3-button w3-pink">Ca m'interesse</button></p>   
+                    <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-indigo">Ca m'interesse</a></p>
+                </p>   
                     </div>
                     </div>
                     </div>
@@ -358,10 +397,61 @@
 
 
 
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class=" center subtitle-width">Notre methode de travail</h3>
+          <div class="titleHR"><span></span></div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-4"> <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border"> 
+                <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
+              </div>
+              <a style = "    margin-top: -15%;
+              margin-left: 5%;" class="w3-button w3-indigo" href="">1</a>
+              <h5>Creative Ideas</h5>
+              <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4"> <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border"> 
+                <i class="icon-design-pencil-rule-streamline color-l-blue"></i> 
+              </div>
+              <a style = "    margin-top: -15%;
+              margin-left: 5;" class="w3-button w3-indigo" href="">2</a>
+              <h5>Rapid Solution</h5>
+              <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> <!-- Service-item -->
+            <div class="text-center services-item">
+              <div class="col-wrapper">
+                <div class="icon-border"> 
+                  <i class="icon-caddie-shopping-streamline color-l-green"></i> 
+                </div>
+                <a style = "    margin-top: -15%;
+                margin-left: 5%;" class="w3-button w3-indigo" href="">3</a>
+                <h5>Magic Touch</h5>
+                <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
+              </div>
+            </div>
+          </div>
+    </div> 
+</section>
 
 
-
-	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+	<!-- <section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
 
     <div class="container">
         <div class="section-content">
@@ -371,53 +461,23 @@
 
                         <div class="talk-inner d-flex flex-column align-items-center text-align-center col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
                             <h1 style = "margin-top:-56%">NOTRE METHODE DE TRAVAIL</h1>
-                            <!-- <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p> -->
-                            <!-- <button type="button" class="btn btn-outline-primary">FEATURES</button> -->
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                        <div class=" row picto-section col-md-4 offset-md-right-6 col-sm-10" data-aos="flip-right">
-                            <div class="steps steps--n4 steps--center">
-                                <div class="step">
-                              <div class="step__content">
-                                              <span class="step__content__number h1">1</span>
-                                            <h3 class="h3 step__content__title">Nous nous connaissons</h3>
-                                              <p class="step__content__text">Nous notons vos besoins et nous définissons avec vous les objectifs.</p>
-                                          </div>
-                            </div>
-                                <div class="step">
-                              <div class="step__content">
-                                              <span class="step__content__number h1">2</span>
-                                            <h3 class="h3 step__content__title">Nous recrutons, nous sélectionnons ou nous formons</h3>
-                                              <p class="step__content__text">En fonction de vos besoins, avec l'expertise de notre équipe.</p>
-                                          </div>
-                            </div>
-                                <div class="step">
-                              <div class="step__content">
-                                              <span class="step__content__number h1">3</span>
-                                            <h3 class="h3 step__content__title">Nous recrutons</h3>
-                                              <p class="step__content__text">Nous mettons à la disposition de votre entreprise les personnes retenues ou les services souscrits, pour que vous n'ayez à vous soucier de rien.</p>
-                                          </div>
-                            </div>
-                                <div class="step">
-                              <div class="step__content">
-                                              <span class="step__content__number h1">4</span>
-                                            <h3 class="h3 step__content__title">Nous évaluons et nous restons à vos côtés</h3>
-                                              <p class="step__content__text">Un conseiller ou un chef d'équipe reste en permanence en contact avec vous.</p>
-                                          </div>
-                            </div>
+                         
                         </div>
-                            <!-- <img style = "margin-left: 90%;"class="my-5" src="https://btob-leaders.com/wp-content/uploads/2021/04/When-influencer-marketing-creates-engaged-customers.jpeg" alt=""> -->
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+                
 
-                    </div><!--/ .featurettes-item -->
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                            
+                        </div>
 
-                </div><!--/ .col-md-12 -->
+                    </div>
 
-            </div><!--/ .row -->
+                </div>
+
+            </div>
         </div>
-    </div><!--/ .container -->
+    </div>
 
-</section>
+</section> -->
 <!-- 
 	<section id="section-featurettes" class="featurettes">
 
@@ -522,12 +582,7 @@
          
                 <div class="col-md-12 portfolio-holder mt-3">
                  
-                    <div class="filter-button-group btn-filter d-flex justify-content-center">
-                        <a tabindex="0" class="is-checked" data-filter="*">voir tout</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
-                    </div>
+               
                   
                  
                     <div class="grid-portfolio">
@@ -733,7 +788,9 @@
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
                             </div>
                             <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                                <!-- <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button> -->
+                                <p><a href = "" class="w3-button w3-deep-purple" type = "sybmit" name = "submit"> Send message</a></p>
+
                             </div>
                         </div>
                     </form>
@@ -827,6 +884,49 @@
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 <script >
+         function popUp(){
+  $(window).load(function(){        
+    $('#myModal').modal('show');
+  });
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+        popUp();
+        setCookie("username", "done", 1);
+    }
+}
+
+$(document).ready(function(){
+  checkCookie();
+});
+     </script>
 	 
 	
 	<script src="js/app.min.js "></script>
