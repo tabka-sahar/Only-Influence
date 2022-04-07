@@ -32,32 +32,95 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.count.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-              <h4 class="modal-title">Vous voulez télécharger le livre blanc?</h4>
-            </div>
-           
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Oui</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
-            </div>
-          </div>
-      
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+    <div id="popup-reg" class="popup">
+        <div class="popup-content">
+         
+            <form id="send" class="send-form">
+              <div class="form-group">
+                <input type="text" placeholder="Nom" id="nom" name="nom" required="required">
+                <label for="name">
+                  <i class="fa fa-user"></i>
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="Prénom" id="prénom" name="prénom" required="required">
+                <label for="phone">
+                  <i class="fa fa-phone"></i>
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Mail..." id="mail" name="mail" required="required">
+                <label for="mail">
+                  <i class="fa fa-envelope"></i>
+                </label>
+
+              </div>
+              <a href="BRAND.zip"> <button type="submit" class="main-btn-rect" name="text" value="Send">Télécharger</button></a>
+
+            
+
+
+              <!-- <button type="submit" class="main-btn-rect" name="text" value="Send"> -->
+                     
+
+                <!-- <i ><a href="BRAND.zip"> <button type="submit" class="main-btn-rect" name="text" value="Send" class="fa fa-paper-plane"></a></i>Télécharger</button> -->
+            </form>
+
+          <span class="fade-out main-btn-circle">╳</span>
         </div>
       </div>
-</head>
+      
 
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
- 
+
+
+
+
+
+
+
+
+
+    <div class=""></div>
+<div id="modal-content" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                
+            </div>
+            <!-- <div class="modal-body">
+                <p class="signCenter">
+                  <span class="closeSymbol">X</span>
+                </p>
+            </div> -->
+          <div class="modal-footer signCenter"> <p class="snapHdr">Vous voulez télécharger notre livre blanc?</p>
+                <a style = "margin-bottom:-12%" href="#" class="btn closeftr" data-dismiss="modal">Fermer</a>
+                <button style = "margin-top: 8.5%;
+    margin-left: 29%;"type="button" class="btn btn-default popup-btn" data-popup="popup-reg">Oui</button>
+    
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
     
 	<nav style = "background-color:aliceblue;" id="header-navbar" class="navbar navbar-expand-lg py-4">
        
@@ -246,6 +309,7 @@
                     Only Influence est une agence de marketing d'influence, élaborant des stratégies advertising complètes du concept à l'execution . Elle inclut des influenceurs nationaux de pemier plan qui ont contribué à lancer des marques mondiales sur le marché tunisien.
                     <!-- Only Inluence est la plateforme d'influence marketing idéale pour les marques qui souhaitent entrer en contact en trois clics avec une communauté de plus de 40k influenceurs et 300k consommateurs. -->
                 </h5>
+                
                 <br></br> 
                 <br></br> 
                 <br></br> 
@@ -874,6 +938,8 @@
         </div>
     </div>
 </footer>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
@@ -885,48 +951,41 @@
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	 <script >
-         function popUp(){
-  $(window).load(function(){        
-    $('#myModal').modal('show');
-  });
-}
+         // set focus when modal is opened
+$('#modal-content').on('shown.bs.modal', function () {
+    $("#txtname").focus();
+});
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// show the modal onload
+$('#modal-content').modal({
+    show: true
+});
 
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-        popUp();
-        setCookie("username", "done", 1);
-    }
-}
-
-$(document).ready(function(){
-  checkCookie();
+// everytime the button is pushed, open the modal, and trigger the shown.bs.modal event
+$('#openBtn').click(function () {
+    $('#modal-content').modal({
+        show: true
+    });
 });
      </script>
+     <script>
+$(document).ready(function(){
+  $('.popup-btn').click(function(){ 
+    var popupBlock = $('#'+$(this).data('popup'));
+    popupBlock.addClass('active')
+      .find('.fade-out').click(function(){
+        popupBlock.css('opacity','0').find('.popup-content').css('margin-top','350px');        
+        setTimeout(function(){
+          $('.popup').removeClass('active');
+          popupBlock.css('opacity','').find('.popup-content').css('margin-top','');
+        }, 600);
+      });
+ });
+});
+     </script>
+
+
+
 	 
 	
 	<script src="js/app.min.js "></script>
