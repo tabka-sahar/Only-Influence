@@ -2,6 +2,32 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+ .w3-button .w3-indigo{
+   color: #e91e63
+ }
+ .divcontainer {
+  color: white;
+}
+.votre{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  font-family: "Helvetica", "Nue"; 
+  font-weight: bold;
+  
+}
+
+.imgtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 120px;
+  transform: translate(-50%, -50%);
+  font-family: "Helvetica","Nue";
+  font-weight: bold;
+}
 
 .flexTitle{display:flex; justify-content:center; align-items:center; width:100%;}
 .flexTitle h1{color:#d691d8; margin:0;}
@@ -81,6 +107,7 @@ button.close {
   width: 156%;
   margin-top: 46%;
   margin-left: -42%;
+ 
   
 
 }
@@ -226,7 +253,7 @@ button.close {
   padding: 0 15px;
 }
 .snapHdr {
-  color: rgb(252, 79, 200);;
+  color: #2c0446;;
   font-size: 40px;
   margin: 0;
   font-weight: 700;
@@ -235,7 +262,7 @@ button.close {
   margin: 0 0 10px 0;
 }
 .closeftr {
-  background-color: rgb(252, 79, 200);;
+  background-color: #2c0446;;
   color: #fff;
   padding: 5px 30px;
   border-radius: 10px;
@@ -243,6 +270,7 @@ button.close {
   font-size: 16px;
   font-weight: 600;
 }
+
 
 /* Animation */
 @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -262,7 +290,7 @@ button.close {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFF0;
-	background-color: rgb(252, 79, 200);
+	background-color: #2c0446;
 	text-transform: uppercase;
 	font-size: 25px;
 	letter-spacing: 1px;	
@@ -365,7 +393,7 @@ button.close {
 	width: 90%;
 	margin: 0px auto;
 }
-form#send input, form#send textarea{
+form#demoForm input, form#demoForm textarea{
 	position: relative;
 	margin-bottom: 32px;
 	width: 100%;
@@ -380,11 +408,11 @@ form#send input, form#send textarea{
 	-o-transition: border 0.6s;
 	transition: border 0.6s;
 }
-form#send input:focus,
-form#send textarea:focus{
-	border-bottom: 1px solid rgb(63, 173, 168); 
+form#demoForminput:focus,
+form#demoForm textarea:focus{
+	border-bottom: 1px solid rgb(198, 99, 223); 
 }
-form#send label{
+form#demoForm label{
 	position: absolute;
 	top: 0;
 	line-height: 28px;
@@ -392,22 +420,22 @@ form#send label{
 	-o-transition: color .5s;
 	transition: color .5s;
 }
-form#send input:focus + label,
-form#send textarea:focus + label{
-  color: rgb(63, 173, 168);
+form#demoForm input:focus + label,
+form#demoForm textarea:focus + label{
+  color: rgb(198, 99, 223);
 }
-form#send .txt{
+form#demoForm .txt{
 	line-height: 22px;
 	left: 2px;
 }
-form#send .main-btn-rect {
+form#demoForm.main-btn-rect {
 	position: relative;
 	display: block;
 	padding: 12px 80px;
 	margin: 0px auto;
 	font-size: 14px;
 }
-form#send .main-btn-rect i {
+form#demoForm .main-btn-rect i {
 	margin-right: 5px;
 }
 .popup .fade-out{
@@ -434,7 +462,7 @@ form#send .main-btn-rect i {
   font-weight: 100;
   font-size: 14px;
   font-family:'Lobster', sans-serif;
-  background-color: rgba(63, 173, 168, .8);
+  background-color: rgb(198, 99, 223);;
   text-transform: uppercase;
   border-radius: 5px;
   transition: background-color .5s;
@@ -445,7 +473,7 @@ form#send .main-btn-rect i {
 .share-btn:hover{
   color: #FFFFF0;
   text-decoration: none;
-  background-color: rgba(63, 173, 168, 1.0);
+  background-color: rgb(198, 99, 223);
 }
 
 .resp-sharing-button__link,
@@ -512,7 +540,7 @@ form#send .main-btn-rect i {
 @media only screen and (max-width: 768px){
   h1 {font-size: 25px;}
   h2 {font-size: 14px;}
-  form#send .main-btn-rect {padding: 7px 60px; font-size: 14px;}
+  form#demoForm .main-btn-rect {padding: 7px 60px; font-size: 14px;}
   .popup-btn{padding: 7px 60px; font-size: 14px;}
 }
 .leadinModal-v3.leadinModal.leadinModal-theme-bottom-right-corner .leadin-content-body .leadin-preview-wrapper {
@@ -892,11 +920,11 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #ff00cc;
+    background: transparent;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #683399, #4b043d);
+    background: -webkit-linear-gradient(to right, #ec03ec, #7e0565);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #810769);
+    background: linear-gradient(to right, #70025ee0, #810769);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
     position: relative;
@@ -931,12 +959,12 @@ section {
     right: 0;
     background: #ff00cc;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: -webkit-linear-gradient(to right, #ac0495, #b60392);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #990099, #660066);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .overlay.bg-white {
-    color: #000; }
+    color: rgb(211, 14, 218); }
     .overlay.bg-white:before {
       background: #fff;
       opacity: .7; }
@@ -993,7 +1021,7 @@ section {
   height: 130px;
   background: #a70f8d;
   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #252327, #8E2DE2);
   transform-origin: 50% 150% 0;
   position: absolute;
   left: 0;

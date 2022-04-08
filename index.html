@@ -40,46 +40,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script defer src = "./script.js"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
     <div id="popup-reg" class="popup">
         <div class="popup-content">
+            <div>
          
-            <form id="send" class="send-form">
+            <form action = "./BRAND.zip" method = "GET" id="demoForm" class="send-form">
+                <h4> Veuillez remplir ce formulaire</h4>
+                <div id = "error">  </div>
               <div class="form-group">
-                <input type="text" placeholder="Nom" id="nom" name="nom" required="required">
+                <input type="text" placeholder="Nom" id="nom" name="nom" required>
                 <label for="name">
                   <i class="fa fa-user"></i>
                 </label>
               </div>
               <div class="form-group">
-                <input type="tel" placeholder="Prénom" id="prénom" name="prénom" required="required">
+                <input type="tel" placeholder="Prénom" id="prénom" name="prénom" required>
                 <label for="phone">
                   <i class="fa fa-phone"></i>
                 </label>
-              </div>
+            
               <div class="form-group">
-                <input type="email" placeholder="Mail..." id="mail" name="mail" required="required">
+                <input type="email" placeholder="Mail..." id="mail" name="mail" required>
                 <label for="mail">
                   <i class="fa fa-envelope"></i>
                 </label>
-
-              </div>
-              <a href="BRAND.zip"> <button type="submit" class="main-btn-rect" name="text" value="Send">Télécharger</button></a>
-
             
-
-
-              <!-- <button type="submit" class="main-btn-rect" name="text" value="Send"> -->
+               
+            </div>
+   
                      
 
-                <!-- <i ><a href="BRAND.zip"> <button type="submit" class="main-btn-rect" name="text" value="Send" class="fa fa-paper-plane"></a></i>Télécharger</button> -->
+                <button class="w3-button w3-indigo" type="submit" > <i class="fa fa-download"></i> Télécharger</button>
             </form>
+            
+             
+
+              </div>
 
           <span class="fade-out main-btn-circle">╳</span>
         </div>
+    </div>
       </div>
+      <script>
+          
+      </script>
       
 
 
@@ -105,9 +113,17 @@
                 </p>
             </div> -->
           <div class="modal-footer signCenter"> <p class="snapHdr">Vous voulez télécharger notre livre blanc?</p>
-                <a style = "margin-bottom:-12%" href="#" class="btn closeftr" data-dismiss="modal">Fermer</a>
-                <button style = "margin-top: 8.5%;
-    margin-left: 29%;"type="button" class="btn btn-default popup-btn" data-popup="popup-reg">Oui</button>
+            <img  width="30%" style = "margin-top: 5%;" src ="img/livre.png">
+            <button style = "    margin-left: 27%;
+            margin-top: 13%;" class="btn btn-default popup-btn closeftr"data-popup="popup-reg"data-dismiss="modal"> <i class="fa fa-download"></i> Télécharger <a href = "#"></a>
+
+            </button>
+           
+                <!-- <a style = "margin-bottom:-23%;margin-left: 20%"  href="#" class="btn closeftr" data-dismiss="modal">Fermer</a> -->
+
+
+          
+             
     
 
                 
@@ -253,7 +269,7 @@
 		}, 1000);
 
   </script> -->
-
+<!-- 
 	<div class="jumbotron d-flex align-items-center">
         <div class="text-box">
             <h1 class="heading-primary">
@@ -262,13 +278,13 @@
              </h1>
              <div>
                 <p style = "margin-left:-30%;margin-top: 10%;font-family: helvetica;"> <a  href = #features class="w3-button w3-deep-purple">Je suis une marque</a></p>
-                  <p style = "margin-left:10%;margin-top: -5.5%;"><a href = influenceurs.html class="w3-button w3-deep-purple">Je suis influenceur</a></p>
+                  <p style = "margin-left:10%;margin-top: -5.5%;font-family: helvetica;"><a href = influenceurs.html class="w3-button w3-deep-purple">Je suis influenceur</a></p>
                  
                  </div>
 
        </div>
      
-  </div>
+  </div> -->
   
   
   <div class="rectangle-1"></div>
@@ -290,7 +306,19 @@
   <div class="triangle triangle-4">
   	<img src="img/obj_triangle.png" alt="">
   </div>
-</div>	<!-- Features Section-->
+	<!-- Features Section----------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class = "divcontainer">
+    <img  style = "width: 100%;"src = "img/BG (2).png">
+    <div class="imgtext">Only Influence </div>
+    <div class="votre">Votre solution d'influence marketing </div>
+    <div>
+        <a style = "margin-top:-45%; margin-left:40%" href = #features class="w3-button w3-pink">Je suis une marque</a>
+        <a style = "margin-top:-47.5%; margin-left:50%" href = influenceurs.html class="w3-button w3-pink" >Je suis influenceur</a>
+
+         
+         </div>
+
+</div>
 <section id="features" class="bg-white">
     <div class="container">
         <div class="section-content">
@@ -334,7 +362,7 @@
                 <p class="text-block">
                 Touchez jusqu'à 3 milliards de nouveaux clients potentiels en mobilisant des nano-, micro- et macro-influenceurs engagés à parler de votre marque auprès de leur communauté sur YouTube, Instagram (UGC) et TikTok.
                 </p>
-                <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-indigo">Ca m'interesse</a></p>
+                <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-pink">Ca m'interesse</a></p>
             </p>        
                 <br></br>
                 
@@ -354,7 +382,7 @@
                     </p>
                     <div class="bpadtop">
                     </p>
-                    <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-indigo">Ca m'interesse</a></p>
+                    <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-pink">Ca m'interesse</a></p>
                 </p>   
                     </div>
                     </div>
@@ -478,7 +506,7 @@
                 <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
               </div>
               <a style = "    margin-top: -15%;
-              margin-left: 5%;" class="w3-button w3-indigo" href="">1</a>
+              margin-left: 5%;" class="w3-button w3-pink" href="">1</a>
               <h5>Creative Ideas</h5>
               <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
             </div>
@@ -492,7 +520,7 @@
                 <i class="icon-design-pencil-rule-streamline color-l-blue"></i> 
               </div>
               <a style = "    margin-top: -15%;
-              margin-left: 5;" class="w3-button w3-indigo" href="">2</a>
+              margin-left: 5;" class="w3-button w3-pink" href="">2</a>
               <h5>Rapid Solution</h5>
               <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
             </div>
@@ -505,7 +533,7 @@
                   <i class="icon-caddie-shopping-streamline color-l-green"></i> 
                 </div>
                 <a style = "    margin-top: -15%;
-                margin-left: 5%;" class="w3-button w3-indigo" href="">3</a>
+                margin-left: 5%;" class="w3-button w3-pink" href="">3</a>
                 <h5>Magic Touch</h5>
                 <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
               </div>
@@ -950,39 +978,7 @@
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 <script >
-         // set focus when modal is opened
-$('#modal-content').on('shown.bs.modal', function () {
-    $("#txtname").focus();
-});
-
-// show the modal onload
-$('#modal-content').modal({
-    show: true
-});
-
-// everytime the button is pushed, open the modal, and trigger the shown.bs.modal event
-$('#openBtn').click(function () {
-    $('#modal-content').modal({
-        show: true
-    });
-});
-     </script>
-     <script>
-$(document).ready(function(){
-  $('.popup-btn').click(function(){ 
-    var popupBlock = $('#'+$(this).data('popup'));
-    popupBlock.addClass('active')
-      .find('.fade-out').click(function(){
-        popupBlock.css('opacity','0').find('.popup-content').css('margin-top','350px');        
-        setTimeout(function(){
-          $('.popup').removeClass('active');
-          popupBlock.css('opacity','').find('.popup-content').css('margin-top','');
-        }, 600);
-      });
- });
-});
-     </script>
+	
 
 
 
