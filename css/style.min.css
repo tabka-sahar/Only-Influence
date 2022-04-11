@@ -2,6 +2,8 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+ 
+ 
  .w3-button .w3-indigo{
    color: #e91e63
  }
@@ -25,7 +27,7 @@
   left: 50%;
   font-size: 120px;
   transform: translate(-50%, -50%);
-  font-family: "Helvetica","Nue";
+  font-family: "Helvetica Neue";
   font-weight: bold;
 }
 
@@ -103,9 +105,9 @@ button.close {
 }
 .modal-content {
   position: relative;
-  height: 190%;
-  width: 156%;
-  margin-top: 46%;
+  height: 411px;
+  width: 992px;
+  margin-top: 64%;
   margin-left: -42%;
  
   

@@ -40,3 +40,15 @@ form.addEventListener('submit',(e)=>{
         errorElement.innerText = messages.join(', ')
     
     }})
+    myBlurFunction = function(state) {
+      var containerElement = document.getElementById('main_container');
+      var overlayEle = document.getElementById('popup');
+  
+      if (state) {
+          overlayEle.style.display = 'block';
+          containerElement.setAttribute('class', 'blur');
+      } else {
+          overlayEle.style.display = 'none';
+          containerElement.setAttribute('class', null);
+      }
+  };
