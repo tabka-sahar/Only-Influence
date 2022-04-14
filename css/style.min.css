@@ -4,6 +4,7 @@
  */
  
  
+ 
  .w3-button .w3-indigo{
    color: #e91e63
  }
@@ -27,7 +28,7 @@
   left: 50%;
   font-size: 120px;
   transform: translate(-50%, -50%);
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica","Neue";
   font-weight: bold;
 }
 
@@ -881,6 +882,14 @@ section {
 .navbar-brand {
   font-size: 40px;
   color: #000; }
+  .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 .navbar-nav .nav-link {
   color: rgb(127, 7, 131);

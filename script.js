@@ -52,3 +52,20 @@ form.addEventListener('submit',(e)=>{
           containerElement.setAttribute('class', null);
       }
   };
+//   $(document).ready(function() {
+//     var $sendEmailEl = $('#send-email');
+    
+//     var $bodyEl = $('#body');
+//     function updateEmailLink() {
+//         $sendEmailEl.attr('href', 'mailto:tabkasahar3@gmail.com' +
+           
+//             '&body=' + encodeURIComponent($bodyEl.val()));
+//     }
+//     $('#body').on('input', updateEmailLink);
+//     updateEmailLink();
+// });
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
