@@ -2,6 +2,75 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+ @import '~mdb-ui-kit/css/mdb.min.css';
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+/* body{
+	background: linear-gradient(to bottom, #7a4f85, #d7a0e7) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Nunito', sans-serif;
+} */
+#collaborer{
+	color: rgb(151, 28, 110);
+	text-shadow: 4px 4px 10px #601c7a;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.social-media{
+	align-items: center;
+	display: flex;
+	transition: transform 0.3s ease-in-out;
+}
+.social-media:hover{
+	transform: translateX(calc(-100% + 60px));
+}
+
+.social-media i{
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+	width: 60px;
+}
+.social-media a{
+	color: #fff;
+	padding: 0 10px;
+	text-align: center;
+	text-decoration: none;
+}
+.social-media-container{
+	top: 50%;
+	list-style-type: none;
+	padding: 0;
+	position: fixed;
+	left: calc(100% - 60px);
+	transform: translateY(-50%);
+	min-width: 250px;
+}
+
+.social-media.blog{
+	background-color: #014592;
+}
+
+.social-media.pinterest{
+	background-color: #bd081c;
+}
+.social-media.linkedin{
+	background-color: #007;
+}
+.social-media.instagram{
+	background-color: #c13584;
+}
+.social-media.github{
+	background-color: #333;
+}
  
  
  
@@ -900,9 +969,7 @@ section {
   .navbar-nav:hover li a:hover {
     opacity: 1; }
 
-.navbar-toggler {
-  font-size: 2rem;
-  color: #fff; }
+
 
 .jumbotron {
   color: #fff;

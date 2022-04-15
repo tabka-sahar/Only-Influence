@@ -70,11 +70,11 @@ $(document).ready(function(){
 // frmvalidator.addValidation("email","email",
 //   "Please enter a valid email address");
 
-var form = document.getElementById("my-form");
+var form = document.getElementById("demoForm");
     
 async function handleSubmit(event) {
   event.preventDefault();
-  var status = document.getElementById("my-form-status");
+  var status = document.getElementById("status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
     method: form.method,
@@ -100,3 +100,15 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+
+$(function(){
+  $("#buttonn").click(function(){
+    $(".cover").fadeIn("300");
+  })
+  $(".cover,.close").click(function(){
+    $(".cover").fadeOut("300");
+  })
+  $(".contents").click(function(e){
+    e.stopPropagation();
+  })
+})
