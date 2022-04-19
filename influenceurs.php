@@ -8,13 +8,14 @@
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
-    <meta name="description" content="Roxy">
+    <title>Only Influence</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -30,7 +31,9 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
 
+    <script defer src = "./script.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
 	<nav style = "background-color:white;" id="header-navbar" class="navbar navbar-expand-lg py-4">
@@ -135,8 +138,12 @@
 
       <!-- Headin -->
       <h1 style = "margin-top:21%;font-family: helvetica,bold,Nue;font-size: 60px;" id = "collaborer" class="display-1 fw-bold aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
-        Collaborer avec les meilleurs marques!
+        Notre expertise :     <h4 style = "margin-top:3%;font-family: helvetica,bold,Nue;font-size: 30px;" id = "collab">
+            la conception de stratégies d'influence impactantes et  la formation dans le domaine de l'influence et de la création de contenu.
+    
+          </h4>
       </h1>
+  
 
       <!-- Text -->
       <p >
@@ -162,18 +169,132 @@
 
 
   <br></br>
-  <div id="logos-home-page">
-	<div class="slider">
-		<div class="slide-track">
-			<div class="slide"><img class="alignnone size-full wp-image-13024" src="https://www.resopso.fr/wp-content/uploads/2018/10/logo-uriage-300x200.png" alt="" width="200" height="100" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13023" src="https://www.solibra.ci/files/images/photo090417201716.png" alt="" width="200" height="100" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13022" src="https://www.sipatunisia.com/wp-content/uploads/2020/12/safia.jpg"  alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13021" src=http://assets.stickpng.com/thumbs/589a4a5b5aa6293a4aac48c0.png alt="" width="200" height="100" /></div>
+
+<div class="container-fluid bg-light pt-5">
+    <h2 class="center subtitle-width">
+        Comment ça marche ?
+        </h2>
+        <h6 class="center subtitle-width bmargbottom text-block">
+        Les influenceurs utilisent Only Influence pour trouver et participer aux campagnes social media des marques les plus influentes <br> dans le monde et produisent du contenu authentique en échange de produits qu'ils/elles veulent tester.
+        </h6>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1 class = "center subtitle-width" id = "collaborer" style = "font-family: helvetica; font-size:40px">Only Influence Academy</h1>
 
 
-		</div>
-	</div>
-</div>
+ 
+
+        <!-- about -->
+
+        <!-- end about -->
+           
+           <div class="content">
+
+              <!-- card -->
+              <div class="card">
+
+         
+                <div class="icon"><i class="material-icons md-36">spatial_tracking</i></div>
+                <p class="title">Les clés pour devenir influenceurs(euses)</p>
+                <div class="text">
+                    <div class = "di">
+                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
+                    <ul>
+                        <li>
+                            Qu'est ce qu'un influenceur?
+                        </li>
+                        <li>
+Définir son projet                            </li>
+<li>
+Créer unr lignr éditoriale et connaitre les spécificités des differents réseaux
+</li>
+                    </ul>
+                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
+                    <ul>
+                        <li>Construire sa stratégie </li>
+                        <li>Booster son compte (+ analyse de l'audience)</li>
+                        <li>Gérer ses partenariats</li>
+                    </ul>
+
+             </div>
+             <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button>
+            </div>
+             
+          </div>
+              <!-- end card -->
+              <!-- card -->
+              <div class="card">
+                 
+                <div class="icon"><i class="material-icons md-36">tap_and_play</i></div>
+                <p class="title">Créer des contenus pour les réseaux sociaux</p>
+                <div class="text">
+                    <div class = "di">
+                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
+                    <ul>
+                        <li>
+                            Formation Instagram
+                        </li>
+                        <li>
+                            Formation TikTok                           </li>
+<li>
+    Formation Youtube</li>
+                    </ul>
+                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
+                    <ul>
+                        <li>Analyser son contenu (statisqtiques / outils) </li>
+                        <li>Tips et astuces pour créer du contenu à partir d'un smartphone</li>
+                        <li>Formation de Bouncy</li>
+                    </ul>
+             </div>
+             <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button>
+
+            </div>
+             
+          </div>
+              <!-- end card -->
+              <!-- card -->
+              <div class="card">
+                 
+                <div class="icon"><i class="material-icons md-36">app_shortcut</i></div>
+                <p class="title">Le marketing d'influence en Tunisie</p>
+                <div class="text">
+                    <div class = "di">
+                    <ul>
+                        <li>
+                            Définir le marketing d'influence et étude du marché tunisien
+                        </li>
+                        <li>
+Connaitre les plateformes de gestion entre marques et influenceurs et les agences de marketing d'influence                        </li>
+<li>
+Les relations entre les marques et les influenceurs
+</li>
+                    </ul>
+                
+             </div>
+             <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button>
+
+            </div>
+             
+          </div>
+              <!-- end card -->
+           
+        
+           
+           </div>
+    
+        
+        
+        
+        
+ 
+
+
+
+
+    <br></br>
+
 <section id="portfolio" class="bg-white">
     <div class="container">
         <div class="section-content">
@@ -325,122 +446,73 @@
         </div>
     </div>
 </section>
-<br>
-<br>
-<br>
+<h2 class="center subtitle-width">
+    IL NOUS FONT CONFIANCE
+    </h2>
+    <br>
+    <br>
+    <br>
+<div id="logos-home-page">
+	<div class="slider">
+		<div class="slide-track">
+			<div class="slide"><img class="alignnone size-full wp-image-13024" src="https://www.resopso.fr/wp-content/uploads/2018/10/logo-uriage-300x200.png" alt="" width="200" height="100" /></div>
+			<div class="slide"><img class="alignnone size-medium wp-image-13023" src="https://www.solibra.ci/files/images/photo090417201716.png" alt="" width="200" height="100" /></div>
+			<div class="slide"><img class="alignnone size-medium wp-image-13022" src="https://www.sipatunisia.com/wp-content/uploads/2020/12/safia.jpg"  alt="" width="200" height="150" /></div>
+			<div class="slide"><img class="alignnone size-medium wp-image-13021" src=http://assets.stickpng.com/thumbs/589a4a5b5aa6293a4aac48c0.png alt="" width="200" height="100" /></div>
 
-<h1 class = "center subtitle-width" id = "collaborer" style = " font-size:50px">Nos Formations</h1>
 
-<br>
-<br>
-<br>
-
-
-<div class="container my-5">
-    <section id="steps">
-        <div class="text-center mb-5">
-            <!-- <span>STEPS</span> -->
-            <!-- <h2 class="font-weight-bold display-4 ">How It <span style=" color: #9B5DE5">Works?</span></h2> -->
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="bg-light position-relative px-3 my-5">
-                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
-                         style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
-                        1
-                    </div>
-                    <div class="px-3 text-center pb-3">
-                        <h4>Les clés pour devenir influenceurs(euses)</h4>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
-                        <ul>
-                            <li>
-                                Qu'est ce qu'un influenceur?
-                            </li>
-                            <li>
-Définir son projet                            </li>
-<li>
-    Créer unr lignr éditoriale et connaitre les spécificités des differents réseaux
-</li>
-                        </ul>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
-                        <ul>
-                            <li>Construire sa stratégie </li>
-                            <li>Booster son compte (+ analyse de l'audience)</li>
-                            <li>Gérer ses partenariats</li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bg-light position-relative px-3 my-5">
-                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
-                         style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
-                        2
-                    </div>
-                    <div class="px-3 text-center pb-3">
-                        <h4>Créer des contenus pour les réseaux sociaux</h4>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
-                        <ul>
-                            <li>
-                                Formation Instagram
-                            </li>
-                            <li>
-Formation TikTok                          </li>
-<li>
-Formation Youtube</li>
-                        </ul>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
-                        <ul>
-                            <li>Analyser son contenu (statisqtiques / outils) </li>
-                            <li>Tips et astuces pour créer du contenu à partir d'un smartphone</li>
-                            <li>Gérer ses partenariats</li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="bg-light position-relative px-3 my-5">
-                    <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white"
-                         style="width: 60px;height: 60px;top: -30px;border-width: 4px !important; background-color: #9B5DE5">
-                        3
-                    </div>
-                    <div class="px-3 text-center pb-3">
-                        <h4>Les clés pour devenir influenceurs(euses)</h4>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
-                        <ul>
-                            <li>
-                                Qu'est ce qu'un influenceur?
-                            </li>
-                            <li>
-Définir son projet                            </li>
-<li>
-    Créer unr lignr éditoriale et connaitre les spécificités des differents réseaux
-</li>
-                        </ul>
-                        <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
-                        <ul>
-                            <li>Construire sa stratégie </li>
-                            <li>Booster son compte (+ analyse de l'audience)</li>
-                            <li>Gérer ses partenariats</li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-                </div>
-            </div>
-        </div>
-    </section>
+		</div>
+	</div>
 </div>
+<br>
+<br>
+<br>
+
+<h1 class="center subtitle-width">
+   <b>Envie de collaborer avec vos marques préférées ?</b> 
+    <u> <a href = "" id="btnOpenForm" >Écrivez-nous ! </a> </u>
+    
+    </h1>
   
-    <br></br>
+    <div class="form-popup-bg">
+      <div class="form-container">
+        <button id="btnCloseForm" class="close-button">X</button>
+        <h1>Contactez-nous</h1>
+        <!-- <p>For more information. Please complete this form.</p> -->
+        <form action="">
+          <div class="form-group">
+            <label for="">Société</label>
+            <input type="text" class="form-control" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="">Nom,Prénom</label>
+            <input class="form-control" type="text" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="">Adresse mail</label>
+            <input class="form-control" type="text" required="required" />
+          </div>
+          <div class="form-group">
+            <label for="">Téléphone</label>
+            <input class="form-control" type="text" required="required" />
+          </div>
+          <div class = "form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="message" id="message" name="message" required="required" placeholder="Message"></textarea>
+  
+          </div>
+       
+          <button style = "margin-Left:43%;margin-Top:5%">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
     
     
 
 
-        <div class="container-fluid bg-light pt-5">
+        <!-- <div class="container-fluid bg-light pt-5">
             <h2 class="center subtitle-width">
                 Comment ça marche ?
                 </h2>
@@ -462,13 +534,13 @@ Définir son projet                            </li>
                                 </div>
                                 <h5 >Demande le produit que tu aimerais tester </h5>
 
-                                <p>A ton inscription, tu reçois 5 crédits que tu peux échanger contre les produits de ton choix sur le Free Store.</p>
+                                <p>A ton inscription, tu reçois 5 crédits que tu peux échanger contre les produits de ton choix sur le Free Store.</p> -->
                                 <!-- <div class="d-flex">
                                     <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                     <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                     <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                                 </div> -->
-                            </div>
+                            <!-- </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
@@ -505,7 +577,7 @@ Définir son projet                            </li>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <div style = "margin-left: 15%"ss="vpadtop blocA">
             <div class="row picto-section">
             <div class="column mpadright mpadleft">
@@ -615,6 +687,39 @@ Définir son projet                            </li>
 	 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
+    <script>
+        function closeForm() {
+  $('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+  
+  /* Contact Form Interactions */
+  $('#btnOpenForm').on('click', function(event) {
+    event.preventDefault();
+
+    $('.form-popup-bg').addClass('is-visible');
+  });
+  
+  
+
+  
+  
+    //close popup when clicking x or off popup
+  $('.form-popup-bg').on('click', function(event) {
+    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+      event.preventDefault();
+      $(this).removeClass('is-visible');
+    }
+  });
+  
+  
+  
+  });
+  
+    </script>
+   
+
 	<script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>

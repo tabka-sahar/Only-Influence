@@ -8,7 +8,7 @@
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
+    <title>Only Influence</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,7 +71,8 @@
     <div id="popup-reg" class="popup">
         <div class="popup-content">
             <div>
-                <form  action="https://formspree.io/f/xnqwgzyn"  id = "demoForm" method="post" class="send-form">
+            <form  action="mail.php"  id = "demoForm" method="post" class="send-form"  name="contact_form">
+                  <!-- <form action = "../Only-Influence/oi.zip" method = "GET"  class="send-form"> -->
                     <h4> Veuillez remplir ce formulaire</h4>
                     <div id = "error">  </div>
                   <div class="form-group">
@@ -81,13 +82,13 @@
                     </label>
                   </div>
                   <div class="form-group">
-                    <input type="tel" placeholder="Prénom" id="prénom" name="prénom" required>
-                   
-                    <label for="prénom">
-                        <i class="fa fa-user"></i>
-                   
+                    <input type="text" placeholder="Prénom" id="prénom" name="prénom" required>
+                    <label for="name">
+                      <i class="fa fa-user"></i>
                     </label>
-                </div>
+                  </div>
+     
+     
                 
                   <div class="form-group">
                     <input type="email" placeholder="Mail..." id="mail" name="mail" required>
@@ -109,15 +110,26 @@
                         <i class="fa fa-phone"></i>
                     </label>
                   </div>
+                  <span class="input-group-btn"><button onClick="mail.php" type="submit" class="btn btn-secondary btn-form display-4">Download</button></span>
+
+                  <!-- <input type="submit" value="Submit" id="submit-form" > -->
+                  <!-- <input type="submit" id="submit-form" 
+            value="submit" hidden /> -->
+                <!-- <input type="submit" value="Submit" class="w3-button w3-indigo" href = "../Only-Influence/oi.zip" download = "../Only-Influence/oi.zip" > <i class="fa fa-download"></i>Télécharger</input> -->
+                 <!-- <button id="download-pdf" > kooo </button> -->
+
        
                          
     
-                    <!-- <button class="w3-button w3-indigo" type="submit" name = "submit" > <i class="fa fa-download"></i> Télécharger</button> -->
-                    <button  class="w3-button w3-indigo" type="submit" id="buttonn" > <i class="fa fa-download"></i> Soumettre</button>
+                    <!-- <button class="w3-button w3-indigo" id = "download-pdf"  type="submit" name = "submit" > <i class="fa fa-download"></i> Télécharger</button> -->
+                <!-- <button class="w3-button w3-indigo" type="submit" id="send-email" > <i class="fa fa-download"></i> Télécharger</button> -->
                     <!-- <button class="w3-button w3-indigo" type="submit" id="send-email" > <i class="fa fa-download"></i> Télécharger</button> -->
                     
-                  
+                    <!-- <button id="download-pdf">Submit</button> -->
                 </form>
+             
+
+   
                 
          
 
@@ -304,7 +316,7 @@
 	<!-- Features Section----------------------------------------------------------------------------------------------------------------------------------------------->
     <div class = "divcontainer">
     <img  style = "width: 100%;"src = "img/BG.png">
-    <img  style = "width: 12%;    margin-left: 5%; margin-top:-108%"src="img/logo 1.png" alt="">
+    <img  style = "width: 10%;    margin-left: 5%; margin-top:-108%"src="img/logo 1.png" alt="">
         
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation"> -->
         <!-- <span class="lnr lnr-menu"></span> -->
@@ -340,7 +352,7 @@
             </li>
         </ul>
         </div>
-    <div class="imgtext">Only Influence </div>
+    <div style = " font-family: helvetica;" class="imgtext">Only Influence </div>
     <div class="votre">Votre solution d'influence marketing </div>
     <div>
         <a style = "margin-top:-45%; margin-left:40%" href = #features class="w3-button w3-pink">Je suis une marque</a>
@@ -942,338 +954,66 @@
     </div>
 </section>
 
-<section id="reservation" class="bg-white section-content">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="bg-white p-5 shadow">
-                    <div class="heading-section text-center">
-                      <h2 class="mb-4">
-                        <i class="fe fe-arrow-right ms-2"></i> Contactez-nous
-                        </h2>
-                    </div>
-                    <form method="post" name="contact-us" action="">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Nom">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <!-- <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button> -->
-                                <p><a href = "" class="w3-button w3-deep-purple" type = "sybmit" name = "submit"> Send message</a></p>
+<h1 class="center subtitle-width">
+  Envie d’une stratégie d’influence impactante ?
+  <u> <a href = "" id="btnOpenForm" >Écrivez-nous ! </a> </u>
+  
+  </h1>
 
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
-                </h2>
-                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-                <ul class="list-inline py-2">
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
-                    </li>
-                </ul>
-
-                <a href="#" class="btn btn-link p-0">
-                    <span>PURCHASE NOW</span>
-                    <span class="lnr lnr-arrow-right"></span>
-                </a>
-            </div> -->
+  <div class="form-popup-bg">
+    <div class="form-container">
+      <button id="btnCloseForm" class="close-button">X</button>
+      <h1>Contactez-nous</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="">Société</label>
+          <input type="text" class="form-control" required="required" />
         </div>
-        
+        <div class="form-group">
+          <label for="">Nom,Prénom</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="">Adresse mail</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="">Téléphone</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class = "form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" name="message" id="message" name="message" required="required" placeholder="Message"></textarea>
+
+        </div>
+     
+        <button style = "margin-Left:43%;margin-Top:5%">Submit</button>
+      </form>
     </div>
-</section>
-<section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-
-          <!-- Form -->
-          <form class="rounded shadow mt-n6 mb-4">
-            <div class="input-group input-group-lg">
-
-              <!-- Text -->
-              <span class="input-group-text border-0 pe-1">
-                <i class="fe fe-search"></i>
-              </span>
-
-              <!-- Input -->
-              <input class="form-control border-0 px-1" type="text" aria-label="Search for your issue..." placeholder="Search for your issue...">
-
-              <!-- Text -->
-              <span class="input-group-text border-0 py-0 ps-1 pe-3">
-                <button class="btn btn-sm btn-primary" type="submit">
-                  Search
-                </button>
-              </span>
-
-            </div>
-          </form>
-
-          <!-- Text -->
-          <div class="row align-items-center mb-6 mb-md-8">
-            <div class="col-auto">
-
-              <!-- Heading -->
-              <h6 class="fw-bold text-uppercase text-muted mb-0">
-                Common searches:
-              </h6>
-
-            </div>
-            <div class="col ms-n5">
-
-              <!-- Text -->
-              <p class="fs-sm text-muted mb-0">
-                Redownload my theme, Request an invoice, Update my .zip
-              </p>
-
-            </div>
-          </div> <!-- / .row -->
-
-        </div>
-      </div> <!-- / .row -->
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-primary shadow-lg mb-6 mb-md-8 lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-primary text-white mb-5">
-                <i class="fe fe-users"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Account
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Issues related to logging in, out, or about multiple devices.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  21 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-success shadow-lg mb-6 mb-md-8 lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-success text-white mb-5">
-                <i class="fe fe-clock"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Integrations
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Connecting with 3rd party apps to exchange data.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  9 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-warning shadow-lg mb-6 mb-md-8 lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-warning text-white mb-5">
-                <i class="fe fe-users"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Billing
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Issues with payments or invoicing.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  14 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-dark shadow-lg mb-6 mb-md-8 mb-lg-0 lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-dark text-white mb-5">
-                <i class="fe fe-users"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Organizations
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Setting up and managing collections of users.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  17 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-primary-desat shadow-lg mb-6 mb-md-0 lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-primary-desat text-white mb-5">
-                <i class="fe fe-users"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Performance
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Improving your system's speed and reliability.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  7 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <!-- Card -->
-          <div class="card card-border border-danger shadow-lg lift lift-lg">
-            <div class="card-body text-center">
-
-              <!-- Icon -->
-              <div class="icon-circle bg-danger text-white mb-5">
-                <i class="fe fe-users"></i>
-              </div>
-
-              <!-- Heading -->
-              <h4 class="fw-bold">
-                Customizing
-              </h4>
-
-              <!-- Text -->
-              <p class="text-gray-700 mb-5">
-                Building custom modules on top of our platform.
-              </p>
-
-              <!-- Badge -->
-              <span class="badge rounded-pill bg-dark-soft">
-                <span class="h6 text-uppercase">
-                  14 entries
-                </span>
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-      </div> <!-- / .row -->
-    </div>
-  </section>
+  </div>
 
 
 
 
 
 
+
+<!-- 
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="mb-2">BOOSTER AVEC NOUS LE TAUX DE CONOSOMMATION DE VOTRE PRODUIT</h2>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p> -->
-                    <!-- <a class="btn btn-outline-primary btn-lg">FEATURES</a> -->
+               
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 </div>
 <footer class="mastfoot my-3">
+    
     <div class="inner container">
          <div class="row">
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
@@ -1318,6 +1058,27 @@
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     
+        <script language="JavaScript">
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("nom","req","Please provide your name");
+    frmvalidator.addValidation("prénom","req","Please provide your name");
+    frmvalidator.addValidation("mail","req","Please provide your email");
+    frmvalidator.addValidation("entreprise","req","Please provide your society");
+    frmvalidator.addValidation("téléphone","req","Please provide your phone-number");
+    frmvalidator.addValidation("email","email",
+      "Please enter a valid email address");
+    </script>
+<script>
+    var pdfUrl = "/oi.zip"
+    
+
+    $('#demoForm').on('submit', function () {
+        window.open(pdfUrl, '_blank');
+    });
+</script>
+    
+
 	
 
 
@@ -1327,5 +1088,6 @@
 	<script src="js/app.min.js "></script>
 	<script src = "https://smtpjs.com/v3/smtp.js"></script>
 	<script src="//localhost:35729/livereload.js"></script>
+    
 </body>
 </html>

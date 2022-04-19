@@ -8,7 +8,7 @@
     -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
+    <title>Only Influence</title>
     <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -41,67 +41,65 @@
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script defer src = "./script.js"></script>
+    <!-- <script defer src = "./mail.php"></script> -->
 
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout" >
+
+<ul class="social-media-container">
+	<li class="social-media blog">
+		<i class="fab fa-facebook"></i>
+		<a href="#" target="_blank">Follo me on facebook</a>
+	</li>
+	<li class="social-media pinterest">
+		<i class="fab fa-pinterest"></i>
+		<a href="https://www.pinterest.com/fr/" target="_blank">Follow me on Pinterest</a>
+	</li>
+	<li class="social-media linkedin">
+		<i class="fab fa-linkedin-in"></i>
+		<a href="https://www.linkedin.com/fr/" target="_blank">Connect on Linkedin</a>
+	</li>
+	<li class="social-media instagram">
+		<i class="fab fa-instagram"></i>
+		<a href="https://www.instagram.com" target="_blank">Follow me on Instagram</a>
+	</li>
+	<li class="social-media github">
+		<i class="fab fa-github"></i>
+		<a href="https://github.com/liloo2040" target="_blank">See my projects on Github</a>
+	</li>
+</ul>
+
     <div id="popup-reg" class="popup">
         <div class="popup-content">
             <div>
+                <form method="post" name="contact_form"
+action="mail.php">
+    Your Name:
+    <input type="text" name="name">
+    Email Address:
+    <input type="text" name="email">
+    Message:
+    <textarea name="message"></textarea>
+    <input type="submit" value="Submit">
+</form>
+               
+                
          
-            <form action = "../Only-Influence/oi.zip" method = "GET" id="demoForm" class="send-form">
-                <h4> Veuillez remplir ce formulaire</h4>
-                <div id = "error">  </div>
-              <div class="form-group">
-                <input type="text" placeholder="Nom" id="nom" name="nom" required>
-                <label for="name">
-                  <i class="fa fa-user"></i>
-                </label>
-              </div>
-              <div class="form-group">
-                <input type="tel" placeholder="Prénom" id="prénom" name="prénom" required>
-               
-                <label for="prénom">
-                    <i class="fa fa-user"></i>
-               
-                </label>
-            </div>
-            
-              <div class="form-group">
-                <input type="email" placeholder="Mail..." id="mail" name="mail" required>
-                <label for="mail">
-                  <i class="fa fa-envelope"></i>
-                </label>
-            
-               
-            </div>
-            <div class="form-group">
-                <input type="text" placeholder="Nom de l 'entreprise" id="entreprise" name="entreprise">
-                <label for="nomentreprise">
-                  <i class="fas fa-building"></i>
-                </label>
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Téléphone" id="téléphone" name="téléphone">
-                <label for="téléphone">
-                    <i class="fa fa-phone"></i>
-                </label>
-              </div>
-   
-                     
 
-                <button class="w3-button w3-indigo" type="submit" id="send-email" > <i class="fa fa-download"></i> Télécharger</button>
-            </form>
             
              
 
               </div>
-              <!-- <button type="submit" class="btn btn-lg btn-success btn-block"><a id="send-email" href="mailto:tabkasahar3@gmail.com"> <i class="fa fa-download"></i>Télécharger</a></button> -->
+              <div id = status></div>
 
-              <!-- <A HREF="mailto:san@antonio.net">san@antonio.net</A> -->
+              <!-- <button type="submit" class="btn btn-lg btn-success btn-block"><a id="send-email" > <i class="fa fa-download"></i>Télécharger</a></button> -->
+
 
           <span class="fade-out main-btn-circle">╳</span>
         </div>
     </div>
+
+
 
 
 
@@ -273,8 +271,8 @@
     <img  style = "width: 100%;"src = "img/BG.png">
     <img  style = "width: 12%;    margin-left: 5%; margin-top:-108%"src="img/logo 1.png" alt="">
         
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="lnr lnr-menu"></span>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <!-- <span class="lnr lnr-menu"></span> -->
     </button>
        <div class="topnav">
 
@@ -307,7 +305,7 @@
             </li>
         </ul>
         </div>
-    <div class="imgtext">Only Influence </div>
+    <div style = " font-family: helvetica;" class="imgtext">Only Influence </div>
     <div class="votre">Votre solution d'influence marketing </div>
     <div>
         <a style = "margin-top:-45%; margin-left:40%" href = #features class="w3-button w3-pink">Je suis une marque</a>
@@ -344,10 +342,15 @@
                 <h2 class=" center subtitle-width">
                     Choisissez votre campagne
                     </h2>
-                    <h5 style = "font-family: CMU-serif;line-height:41px" class="section-title">
+                    <h5  style = "font-family: CMU-serif;line-height:41px" class="section-title">
+                        Un accompagnement personnalisé pour vous assurer la réussite de chacune de vos collaborations avec les influenceurs , créateurs de contenu ou personnalités publiques selon une 
+                        methode simple et éprouvée en 5 étapes de la selection jusqu'au bilan des retombées de la compagne crée.
+
+                    </h5>
+                    <!-- <h5 style = "font-family: CMU-serif;line-height:41px" class="section-title">
                         Only Influence connecte les marques, selon leurs objectifs, à des influenceurs aux audiences engagées, dans le but de produire des avis produits authentiques sur les réseaux sociaux ou sur des plateformes e-commerce. 
                         Découvrez nos solutions en fonction de votre challenge actuel :
-                    </h5>
+                    </h5> -->
             </div>
             <img style = "margin-right:50%" alt="DES CONTENUS RÉSEAUX SOCIAUX" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/explainA-03b3ffe117553efbcd65c02da3e8ce7eba25b99c772e75c5dbe2180d3b6957e7.gif">
             <div class="explainright text first" style = "margin-left:70%;margin-top:-33%">
@@ -484,14 +487,18 @@
   <!-- </div> -->
 
 
-
+<br>
+<br>
+<br>
 
 
   <section id="services">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class=" center subtitle-width">Notre methode de travail</h3>
+          <h3 class=" center subtitle-width">NOTRE METHODE DE TRAVAIL</h3>
+          <br>
+          <br>
           <div class="titleHR"><span></span></div>
         </div>
       </div>
@@ -505,22 +512,10 @@
               </div>
               <a style = "    margin-top: -15%;
               margin-left: 5%;" class="w3-button w3-pink" href="">1</a>
-              <h5>Creative Ideas</h5>
-              <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4"> <!-- Service-item -->
-          <div class="text-center services-item">
-            <div class="col-wrapper">
-              <div class="icon-border"> 
-                <i class="icon-design-pencil-rule-streamline color-l-blue"></i> 
-              </div>
-              <a style = "    margin-top: -15%;
-              margin-left: 5;" class="w3-button w3-pink" href="">2</a>
-              <h5>Rapid Solution</h5>
-              <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
+              <h5>Matchmaking</h5>
+              <p>
+                  Pour chaque marque , il y a un profil adapté et nous savons toujours où le trouver pour matcher avec votre identité et vos objectifs. 
+              </p>
             </div>
           </div>
         </div>
@@ -528,13 +523,56 @@
             <div class="text-center services-item">
               <div class="col-wrapper">
                 <div class="icon-border"> 
-                  <i class="icon-caddie-shopping-streamline color-l-green"></i> 
+                  <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
+                </div>
+                <a style = "    margin-top: -15%;
+                margin-left: 5%;" class="w3-button w3-pink" href="">2</a>
+                <h5>Accompagenement complet</h5>
+<p>
+    Nous nous chargeons de la négociation, des échanges avec le(s) proffil(s) retenu(s) et de la définition de la collaboration (cahier des charges, calendrier).
+</p>              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"> <!-- Service-item -->
+            <div class="text-center services-item">
+              <div class="col-wrapper">
+                <div class="icon-border"> 
+                  <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
                 </div>
                 <a style = "    margin-top: -15%;
                 margin-left: 5%;" class="w3-button w3-pink" href="">3</a>
-                <h5>Magic Touch</h5>
-                <p>Nulla vitae libero pharetra augue. Etiam porta malesuada magna mollis euismod consectetur sem urdom tempus porttitor.</p>
+                <h5>Statgie sur-mesure</h5>
+<p>
+    Plus que des compagnes , nous imaginons de véritables mises en scènes personnalisées pour atteindre vos objctifs. 
+</p>              </div>
+            </div>
+          </div>
+        <div class="col-sm-4"> <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border"> 
+                <i class="icon-design-pencil-rule-streamline color-l-blue"></i> 
               </div>
+              <a style = "    margin-top: -15%;
+              margin-left: 18%;" class="w3-button w3-pink" href="">4</a>
+              <h5>Suivi</h5>
+<p>
+    A chaque étape de la collaboration, nous nous assurons que tous les contenus diffusés sont de la meilleure qualité et respectent les directives.
+</p>            </div>
+          </div>
+        </div>
+        <div class="col-sm-4"> <!-- Service-item -->
+            <div class="text-center services-item">
+              <div class="col-wrapper">
+                <div class="icon-border"> 
+                  <i class="icon-caddie-shopping-streamline color-l-green"></i>
+                </div>
+                <a style = "    margin-top: -15%;
+                margin-left: 5%;" class="w3-button w3-pink" href="">5</a>
+                <h5>Bilan</h5>
+<p>
+    A la in de la compagne nous vous remettons un bilan détaillé desd statistiques et des retombées de la collaboration menées
+</p>              </div>
             </div>
           </div>
     </div> 
@@ -869,86 +907,63 @@
     </div>
 </section>
 
-<section id="reservation" class="bg-white section-content">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="bg-white p-5 shadow">
-                    <div class="heading-section text-center">
-                      <h2 class="mb-4">
-                        <i class="fe fe-arrow-right ms-2"></i> Contactez-nous
-                        </h2>
-                    </div>
-                    <form method="post" name="contact-us" action="">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Nom">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <!-- <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button> -->
-                                <p><a href = "" class="w3-button w3-deep-purple" type = "sybmit" name = "submit"> Send message</a></p>
+<h1 class="center subtitle-width">
+  Envie d’une stratégie d’influence impactante ?
+  <u> <a href = "" id="btnOpenForm" >Écrivez-nous ! </a> </u>
+  
+  </h1>
 
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
-                </h2>
-                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-
-                <ul class="list-inline py-2">
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
-                    </li>
-                </ul>
-
-                <a href="#" class="btn btn-link p-0">
-                    <span>PURCHASE NOW</span>
-                    <span class="lnr lnr-arrow-right"></span>
-                </a>
-            </div> -->
+  <div class="form-popup-bg">
+    <div class="form-container">
+      <button id="btnCloseForm" class="close-button">X</button>
+      <h1>Contactez-nous</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="">Société</label>
+          <input type="text" class="form-control" required="required" />
         </div>
-        
-    </div>
-</section>
+        <div class="form-group">
+          <label for="">Nom,Prénom</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="">Adresse mail</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="">Téléphone</label>
+          <input class="form-control" type="text" required="required" />
+        </div>
+        <div class = "form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" name="message" id="message" name="message" required="required" placeholder="Message"></textarea>
 
+        </div>
+     
+        <button style = "margin-Left:43%;margin-Top:5%">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-- 
 <section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
     <div class="container">
         <div class="section-content" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="mb-2">BOOSTER AVEC NOUS LE TAUX DE CONOSOMMATION DE VOTRE PRODUIT</h2>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p> -->
-                    <!-- <a class="btn btn-outline-primary btn-lg">FEATURES</a> -->
+               
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 </div>
 <footer class="mastfoot my-3">
     <div class="inner container">
@@ -957,7 +972,7 @@
          		
          	</div>
          	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+         		<p class="mx-auto text-center mb-0">&copy; Only Influence<a href="https://gettemplates.co" target="_blank"></a>.</p>
          	</div>
            
             <div class="col-lg-4 col-md-12">
@@ -1002,6 +1017,7 @@
 	 
 	
 	<script src="js/app.min.js "></script>
+	<script src = "https://smtpjs.com/v3/smtp.js"></script>
 	<script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>
