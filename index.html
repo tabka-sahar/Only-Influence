@@ -1,5 +1,5 @@
 <!DOCTYPE html  PUBLIC "-//W3C//DTD HTML 4.01//EN"
-   "http://www.w3.org/TR/html4/strict.dtd">
+   "https://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 
 <head>
@@ -22,8 +22,8 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
     
   
 
@@ -111,7 +111,7 @@
                         <i class="fa fa-phone"></i>
                     </label>
                   </div>
-                  <span class="input-group-btn"><button onClick="mail.php" type="submit" class="btn btn-secondary btn-form display-4">Download</button></span>
+                  <span class="input-group-btn"><button onClick="mail.php" type="submit" id="submit-form" class="btn btn-secondary btn-form display-4">Download</button></span>
 
                   <!-- <input type="submit" value="Submit" id="submit-form" > -->
                   <!-- <input type="submit" id="submit-form" 
@@ -326,7 +326,7 @@
 
         <ul class="navbar-nav ml-auto">
             <li  class="nav-item">
-                <a style = "color: white;margin-left: 68%;margin-top: -56%;font-family: Helvetica;" class="nav-link" href="index.html">Accueil</a>
+                <a style = "color: white;margin-left: 68%;margin-top: -56%;font-family: Helvetica;" class="nav-link" href="index.php">Accueil</a>
             </li>
             <li class="nav-item">
                 <a style = "color: white ; margin-top: -56%;margin-left: 72%;font-family: Helvetica;" class="nav-link" href="#qui">Qui sommes nous</a>
@@ -357,7 +357,7 @@
     <div class="votre">Votre solution d'influence marketing </div>
     <div>
         <a style = "margin-top:-45%; margin-left:40%" href = #features class="w3-button w3-pink">Je suis une marque</a>
-        <a style = "margin-top:-47.5%; margin-left:50%" href = influenceurs.html class="w3-button w3-pink" >Je suis influenceur</a>
+        <a style = "margin-top:-47.5%; margin-left:50%" href = influenceurs.php class="w3-button w3-pink" >Je suis influenceur</a>
 
          
          </div>
@@ -369,9 +369,12 @@
             <!-- Section Title -->
             <div class="title-wrap mb-5" data-aos="fade-up">
                 <h2 class=" center subtitle-width" id = "qui">
+               
                     Qui sommes nous?
+                </h2>
                     <br></br>
                     <br></br>
+              
                     
                     <img style = "margin-right:50%;width:45%;height:45%;" alt="DES CONTENUS RÉSEAUX SOCIAUX" src="https://assets-global.website-files.com/60d304c04a4fa6dc684afabc/61b1c8720078da872be65c0a_618d21b72f0c17fc42c9febb_AgencePlateforme.png">
 
@@ -400,7 +403,7 @@
                         Découvrez nos solutions en fonction de votre challenge actuel :
                     </h5> -->
             </div>
-            <img style = "margin-right:50%" alt="DES CONTENUS RÉSEAUX SOCIAUX" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/explainA-03b3ffe117553efbcd65c02da3e8ce7eba25b99c772e75c5dbe2180d3b6957e7.gif">
+            <img style = "margin-right:50%" alt="DES CONTENUS RÉSEAUX SOCIAUX" src="./img/icons/explainA-03b3ffe117553efbcd65c02da3e8ce7eba25b99c772e75c5dbe2180d3b6957e7.gif">
             <div class="explainright text first" style = "margin-left:70%;margin-top:-33%">
                 <div class="pixel16 pink-light uppercase">
                 <p style = "color:rgb(155, 20, 101)">DES CONTENUS RÉSEAUX SOCIAUX</p>
@@ -411,13 +414,19 @@
                 <p class="text-block">
                 Touchez jusqu'à 3 milliards de nouveaux clients potentiels en mobilisant des nano-, micro- et macro-influenceurs engagés à parler de votre marque auprès de leur communauté sur YouTube, Instagram (UGC) et TikTok.
                 </p>
-                <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-pink">Ca m'interesse</a></p>
+                <p style = "font-family: helvetica;"> <a style = "    position: absolute;
+                    top:71%;
+                    margin-left: -3%;
+                    background-color:#8d8cc9;
+                    color: #fff;
+                    border:none;
+                    border-radius:30px;"  id = "btnOpenFormm" class="w3-button">Ca m'interesse</a></p>
             </p>        
                 <br></br>
                 
                 <div class="clearfix">
                     <div class="explainleft">
-                    <img  style = "margin-left:-390%"alt="DES ÉVÉNEMENTS" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/explainC-883e6adbb7c795c9020daaafef7fd11859331b70db3139192e3158abe9f20a88.gif">
+                    <img  style = "margin-left:-390%"alt="DES ÉVÉNEMENTS" src="./img/icons/explainC-883e6adbb7c795c9020daaafef7fd11859331b70db3139192e3158abe9f20a88.gif">
                     </div>
                     <div style = "margin-top: -93%;"class="explainright text">
                     <div class="pixel16 pink-light uppercase">
@@ -431,8 +440,14 @@
                     </p>
                     <div class="bpadtop">
                     </p>
-                    <p style = "font-family: helvetica;"> <a  href = #features class="w3-button w3-pink">Ca m'interesse</a></p>
-                </p>   
+                    <p style = "font-family: helvetica;"> <a style = "    position: absolute;
+                        top:92%;
+                        margin-left: -3%;
+                        background-color:#8d8cc9;
+                        color: #fff;
+                        border:none;
+                        border-radius:30px;"  id = "btnOpenFormmm" class="w3-button">Ca m'interesse</a></p>
+                </p>                   </p>   
                     </div>
                     </div>
                     </div>
@@ -534,97 +549,84 @@
     </div> -->
   <!-- </div> -->
 
+<h1 class = "h1">NOTRE METHODE DE TRAVAIL</h1>
 
 <br>
 <br>
 <br>
+<ul class = "ul">
+    <li class = "li" style="--accent-color:#bf95b9">
+        <div class="date">Matchmaking</div>
+        <div style = "font-weight: bold"class="title">1</div>
+        <div class="descr">Pour chaque marque , il y a un profil adapté et nous savons toujours où le trouver pour matcher avec votre identité et vos objectifs. 
+        </div>
+    </li>
+    <li class = "li" style="--accent-color:#8d8cc9">
+        <div class="date">Accompagenement complet</div>
+        <div style = "font-weight: bold"class="title">2</div>
+        <div class="descr">    Nous nous chargeons de la négociation, des échanges avec le(s) proffil(s) retenu(s) et de la définition de la collaboration (cahier des charges, calendrier).
+        </div>
+    </li>
+    <li class = "li" style="--accent-color:#980090">
+        <div class="date">Statgie sur-mesure</div>
+        <div style = "font-weight: bold"class="title">3</div>
+        <div class="descr">       Plus que des compagnes , nous imaginons de véritables mises en scènes personnalisées pour atteindre vos objctifs. 
+
+        </div>
+    </li>
+    <li class = "li" style="--accent-color:#590a6e">
+        <div class="date">Suivi</div>
+        <div style = "font-weight: bold"class="title">4</div>
+        <div class="descr">       A chaque étape de la collaboration, nous nous assurons que tous les contenus diffusés sont de la meilleure qualité et respectent les directives.
+
+        </div>
+    </li>
+    <li class = "li" style="--accent-color:#3a0b74">
+        <div class="date">Bilan</div>
+        <div style = "font-weight: bold"class="title">5</div>
+        <div class="descr">    A la fin de la compagne nous vous remettons un bilan détaillé desd statistiques et des retombées de la collaboration menées
+        </div>
+    </li>
+</ul>
+<!-- <div class="credits"><a target="_blank" href="https://www.freepik.com/free-vector/infographic-template-with-yearly-info_1252895.htm">inspired by</a></div> -->
 
 
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class=" center subtitle-width">NOTRE METHODE DE TRAVAIL</h3>
-          <br>
-          <br>
-          <div class="titleHR"><span></span></div>
+<!-- <h1 class = "fakee">NOTRE METHODE DE TRAVAIL</h1>
+<br>
+<br>
+<br>
+<ol class="ol-cards">
+    <li style="--accent-color: #bf95b9">
+        <div class="icon"><i class="fa-brands fa-codepen"></i></div>
+        <div class="title">Matchmaking</div>
+        <div class="descr">Pour chaque marque , il y a un profil adapté et nous savons toujours où le trouver pour matcher avec votre identité et vos objectifs. 
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-sm-4"> <!-- Service-item -->
-          <div class="text-center services-item">
-            <div class="col-wrapper">
-              <div class="icon-border"> 
-                <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
-              </div>
-              <a style = "    margin-top: -15%;
-              margin-left: 5%;" class="w3-button w3-pink" href="">1</a>
-              <h5>Matchmaking</h5>
-              <p>
-                  Pour chaque marque , il y a un profil adapté et nous savons toujours où le trouver pour matcher avec votre identité et vos objectifs. 
-              </p>
-            </div>
-          </div>
+    </li>
+    <li style="--accent-color: #8d8cc9">
+        <div class="icon"><i class="fa-brands fa-html5"></i></div>
+        <div class="title">Accompagenement complet</div>
+        <div class="descr">    Nous nous chargeons de la négociation, des échanges avec le(s) proffil(s) retenu(s) et de la définition de la collaboration (cahier des charges, calendrier).
         </div>
-        <div class="col-sm-4"> <!-- Service-item -->
-            <div class="text-center services-item">
-              <div class="col-wrapper">
-                <div class="icon-border"> 
-                  <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
-                </div>
-                <a style = "    margin-top: -15%;
-                margin-left: 5%;" class="w3-button w3-pink" href="">2</a>
-                <h5>Accompagenement complet</h5>
-<p>
-    Nous nous chargeons de la négociation, des échanges avec le(s) proffil(s) retenu(s) et de la définition de la collaboration (cahier des charges, calendrier).
-</p>              </div>
-            </div>
-          </div>
-          <div class="col-sm-4"> <!-- Service-item -->
-            <div class="text-center services-item">
-              <div class="col-wrapper">
-                <div class="icon-border"> 
-                  <i class="icon-design-graphic-tablet-streamline-tablet color-l-orange"></i> 
-                </div>
-                <a style = "    margin-top: -15%;
-                margin-left: 5%;" class="w3-button w3-pink" href="">3</a>
-                <h5>Statgie sur-mesure</h5>
-<p>
-    Plus que des compagnes , nous imaginons de véritables mises en scènes personnalisées pour atteindre vos objctifs. 
-</p>              </div>
-            </div>
-          </div>
-        <div class="col-sm-4"> <!-- Service-item -->
-          <div class="text-center services-item">
-            <div class="col-wrapper">
-              <div class="icon-border"> 
-                <i class="icon-design-pencil-rule-streamline color-l-blue"></i> 
-              </div>
-              <a style = "    margin-top: -15%;
-              margin-left: 18%;" class="w3-button w3-pink" href="">4</a>
-              <h5>Suivi</h5>
-<p>
-    A chaque étape de la collaboration, nous nous assurons que tous les contenus diffusés sont de la meilleure qualité et respectent les directives.
-</p>            </div>
-          </div>
+    </li>
+    <li style="--accent-color: #980090">
+        <div class="icon"><i class="fa-brands fa-css3"></i></div>
+        <div class="title">Statgie sur-mesure</div>
+        <div class="descr">    Plus que des compagnes , nous imaginons de véritables mises en scènes personnalisées pour atteindre vos objctifs. 
         </div>
-        <div class="col-sm-4"> <!-- Service-item -->
-            <div class="text-center services-item">
-              <div class="col-wrapper">
-                <div class="icon-border"> 
-                  <i class="icon-caddie-shopping-streamline color-l-green"></i>
-                </div>
-                <a style = "    margin-top: -15%;
-                margin-left: 5%;" class="w3-button w3-pink" href="">5</a>
-                <h5>Bilan</h5>
-<p>
-    A la in de la compagne nous vous remettons un bilan détaillé desd statistiques et des retombées de la collaboration menées
-</p>              </div>
-            </div>
-          </div>
-    </div> 
-</section>
+    </li>
+    <li style="--accent-color: #590a6e">
+        <div class="icon"><i class="fa-brands fa-css3"></i></div>
+        <div class="title">Suivi</div>
+        <div class="descr">    A chaque étape de la collaboration, nous nous assurons que tous les contenus diffusés sont de la meilleure qualité et respectent les directives.
+        </div>
+    </li>
+    <li style="--accent-color: #3a0b74">
+        <div class="icon"><i class="fa-brands fa-css3"></i></div>
+        <div class="title">Bilan</div>
+        <div class="descr">    A la fin de la compagne nous vous remettons un bilan détaillé desd statistiques et des retombées de la collaboration menées
+        </div>
+    </li>
+</ol> -->
 
 
 	<!-- <section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
@@ -961,26 +963,26 @@
   
   </h1>
 
-  <div class="form-popup-bg">
+  <div id = "ecrit" class="form-popup-bg">
     <div class="form-container">
       <button id="btnCloseForm" class="close-button">X</button>
       <h1>Contactez-nous</h1>
-      <form action="">
+      <form  method = "post" name="contact_form"  action="contact.php"  id = "contactForm">
         <div class="form-group">
           <label for="">Société</label>
-          <input type="text" class="form-control" required="required" />
+          <input type="text" id = "société" name="société" class="form-control" required="required" />
         </div>
         <div class="form-group">
           <label for="">Nom,Prénom</label>
-          <input class="form-control" type="text" required="required" />
+          <input class="form-control" id = "nom,prénom" name="nom,prénom"  type="text" required="required" />
         </div>
         <div class="form-group">
           <label for="">Adresse mail</label>
-          <input class="form-control" type="text" required="required" />
+          <input class="form-control" id = "mail" name = "mail" type="text" required="required" />
         </div>
         <div class="form-group">
           <label for="">Téléphone</label>
-          <input class="form-control" type="text" required="required" />
+          <input class="form-control" id = "téléphone" name ="téléphone" type="text" required="required" />
         </div>
         <div class = "form-group">
           <label for="message">Message</label>
@@ -988,9 +990,15 @@
 
         </div>
      
-        <button style = "margin-Left:43%;margin-Top:5%">Submit</button>
+        <input style = "    margin-left: 43%;
+    margin-top: 6%;" type="submit" value="Envoyé">
+              <div id = statuss></div>
+
       </form>
+       
     </div>
+ 
+
   </div>
 
 
@@ -1048,8 +1056,8 @@
     </div>
 </footer>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="vendor/select2/select2.min.js "></script>
@@ -1067,7 +1075,7 @@
     frmvalidator.addValidation("mail","req","Please provide your email");
     frmvalidator.addValidation("entreprise","req","Please provide your society");
     frmvalidator.addValidation("téléphone","req","Please provide your phone-number");
-    frmvalidator.addValidation("email","email",
+    frmvalidator.addValidation("mail","mail",
       "Please enter a valid email address");
     </script>
 <script>
@@ -1078,6 +1086,8 @@
         window.open(pdfUrl, '_blank');
     });
 </script>
+
+
     
 
 	
@@ -1088,7 +1098,7 @@
 	
 	<script src="js/app.min.js "></script>
 	<script src = "https://smtpjs.com/v3/smtp.js"></script>
-	<script src="//localhost:35729/livereload.js"></script>
+	 <script src="//localhost:35729/livereload.js"></script> 
     
 </body>
 </html>

@@ -69,7 +69,7 @@
             <div class="collapse navbar-collapse" id="navbar-nav-header">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Accueil</a>
+                        <a class="nav-link" href="index.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#qui">Qui sommes nous</a>
@@ -78,7 +78,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="influenceurs.html">Influenceurs</a>
+                        <a class="nav-link" href="influenceurs.php">Influenceurs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#reservation">Contact</a>
@@ -475,37 +475,43 @@ Les relations entre les marques et les influenceurs
     </h1>
   
     <div class="form-popup-bg">
-      <div class="form-container">
-        <button id="btnCloseForm" class="close-button">X</button>
-        <h1>Contactez-nous</h1>
-        <!-- <p>For more information. Please complete this form.</p> -->
-        <form action="">
-          <div class="form-group">
-            <label for="">Société</label>
-            <input type="text" class="form-control" required="required" />
-          </div>
-          <div class="form-group">
-            <label for="">Nom,Prénom</label>
-            <input class="form-control" type="text" required="required" />
-          </div>
-          <div class="form-group">
-            <label for="">Adresse mail</label>
-            <input class="form-control" type="text" required="required" />
-          </div>
-          <div class="form-group">
-            <label for="">Téléphone</label>
-            <input class="form-control" type="text" required="required" />
-          </div>
-          <div class = "form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" name="message" id="message" name="message" required="required" placeholder="Message"></textarea>
-  
-          </div>
-       
-          <button style = "margin-Left:43%;margin-Top:5%">Submit</button>
-        </form>
+        <div class="form-container">
+          <button id="btnCloseForm" class="close-button">X</button>
+          <h1>Contactez-nous</h1>
+          <form  method = "post" name="contact_form"  action="contact.php"  id = "contactForm">
+            <div class="form-group">
+              <label for="">Société</label>
+              <input type="text" id = "société" name="société" class="form-control" required="required" />
+            </div>
+            <div class="form-group">
+              <label for="">Nom,Prénom</label>
+              <input class="form-control" id = "nom,prénom" name="nom,prénom"  type="text" required="required" />
+            </div>
+            <div class="form-group">
+              <label for="">Adresse mail</label>
+              <input class="form-control" id = "mail" name = "mail" type="text" required="required" />
+            </div>
+            <div class="form-group">
+              <label for="">Téléphone</label>
+              <input class="form-control" id = "téléphone" name ="téléphone" type="text" required="required" />
+            </div>
+            <div class = "form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" id="message" name="message" required="required" placeholder="Message"></textarea>
+    
+            </div>
+         
+            <input style = "    margin-left: 43%;
+        margin-top: 6%;" type="submit" value="Envoyé">
+                  <div id = statuss></div>
+    
+          </form>
+           
+        </div>
+     
+    
       </div>
-    </div>
+    
 
 
     
@@ -674,7 +680,7 @@ Les relations entre les marques et les influenceurs
         </div>
     </div>
 </footer>	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
 	<script src="vendor/select2/select2.min.js "></script>
