@@ -2,7 +2,137 @@
  * Roxy: Bootstrap template by GettTemplates.com
  * https://gettemplates.co/roxy
  */
+ #demoFrorm
  
+ .newsletter_content {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newsletter_thumb {
+  background: rgba(0,0,0,0.08);
+  width: 200px;
+  height: 200px;
+  margin: 0 1rem 2rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+.popu {
+  position: fixed;
+  display: block;
+  min-height: 0;
+  background: rgb(245, 166, 228);
+  border-radius: 14px;
+  opacity: 0;
+  color: rgba(0,0,0,0.4);
+  top: 90%;
+  left: 70%;
+/* user-select: none */
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background-color: rgb(247, 162, 242);
+  border-left: 35px solid rgb(69, 31, 80);
+  /* border-bottom: 45px solid rgb(34, 18, 39); */
+}
+.titlez {
+  width: 100%;
+  text-align: center;
+  margin: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.popu_show {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: cubic-bezier(0.66, 0.12, 0.49, 0.89);
+          animation-timing-function: cubic-bezier(0.66, 0.12, 0.49, 0.89);
+/*animation-timing-function: cubic-bezier(.53,.01,.18,.68)*/
+/* animation-timing-function: cubic-bezier(.68,.12,.53,.9) */
+  opacity: 1;
+  height: auto;
+}
+.popu_content {
+  padding: 0.5rem 10rem 5rem 7rem;
+  position: relative;
+}
+.close {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 300;
+  top: 10px;
+  color: #fff;
+  right: 10px;
+  padding: 0rem 0.8rem 0.3rem 0.8rem;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+.close:hover {
+  background: rgba(0,0,0,0.2);
+}
+.suscribe_title {
+  font-weight: 300;
+  /* text-align: center; */
+  color: rgb(239, 223, 241);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Helvetica-Neue Bold";
+  font-size: 40px;
+}
+.suscribe_titlez {
+  font-weight: 300;
+  /* text-align: center; */
+  color: rgb(138, 10, 163);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Helvetica-Neue Bold";
+  font-size: 25px;
+}
+
+
+
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    height: auto;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    height: auto;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
 element.style {
   transform: unset;
   transition: transform 0.1s ease 0s;
@@ -116,7 +246,8 @@ section {
   .carrd {
     height: 400px;
     width:320px;
-    margin-left:-110%
+    margin-left:-110%;
+    /* border-radius: 95%; */
   }
 }
 .carrd:before {
@@ -174,14 +305,16 @@ section {
 
 .tittle {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 500;
+  font-weight: "HelveticaNeue-Bold";
   line-height: 1.2;
+  margin-top: -50%;
 }
 
 .coopy {
   font-family: var(--font-serif);
   font-size: 1.125rem;
-  font-style: italic;
+  font-style: "CMU-serif bolditalic";
   line-height: 1.35;
 }
 
@@ -870,8 +1003,8 @@ section {
   left: 50%;
   font-size: 40px;
   transform: translate(-50%, -50%);
-  font-family: "helvetica";
-  font-weight: bold;
+  font-family: "Helvetica Neue";
+  font-weight: Bold;
   
 }
 
@@ -1119,7 +1252,7 @@ button.close {
   margin: 0 0 10px 0;
 }
 .closeftr {
-  background-color: #2c0446;;
+  background-color: #8D86C9;;
   color: #fff;
   padding: 5px 30px;
   border-radius: 10px;
@@ -1147,7 +1280,7 @@ button.close {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFF0;
-	background-color: #2c0446;
+	background-color: #8D86C9;
 	text-transform: uppercase;
 	font-size: 25px;
 	letter-spacing: 1px;	
@@ -1250,6 +1383,7 @@ button.close {
 	width: 90%;
 	margin: 0px auto;
 }
+
 form#demoForm input, form#demoForm textarea{
 	position: relative;
 	margin-bottom: 32px;
@@ -1443,11 +1577,7 @@ text-align: center;
 .headerBar img {
 margin: 1em .7em;
 }
-h1 {
-margin-bottom: .2em;
-font-size: 26px;
-text-transform: capitalize;
-}
+
 p {margin: .75em 0 1.5em;}
 .buttonStyle {
 border: transparent;
@@ -1965,7 +2095,7 @@ margin-right:-50% }
   border: 15px solid rgba(255, 255, 255, 0.08);
   position: absolute;
   right: -10%;
-  top: 5%;
+  top: 20%;
   display: block;
   animation: floating-slow ease-in-out 12s infinite; }
   
@@ -2190,7 +2320,7 @@ margin-right:-50% }
 .grid-item-wrapper:before {
   content: '';
   display: block;
-  background: rgba(171, 128, 240, 0.7);
+  background: rgba(211, 91, 241, 0.7);
   position: absolute;
   top: 0;
   right: 0;

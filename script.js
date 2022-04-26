@@ -70,6 +70,7 @@ $('.popup-btn').click(function(){
 // frmvalidator.addValidation("email","email",
 //   "Please enter a valid email address");
 
+
 var form = document.getElementById("demoForm");
   
 async function handleSubmit(event) {
@@ -77,6 +78,7 @@ event.preventDefault();
 var status = document.getElementById("status");
 var data = new FormData(event.target);
 fetch(event.target.action, {
+
   method: form.method,
   body: data,
   headers: {
@@ -84,7 +86,7 @@ fetch(event.target.action, {
   }
 }).then(response => {
   if (response.ok) {
-    status.innerHTML = "Thanks for your submission!";
+    status.innerHTML = "Téléchargement reussi!";
     form.reset()
   } else {
     response.json().then(data => {
@@ -99,6 +101,9 @@ fetch(event.target.action, {
   status.innerHTML = "Oops! There was a problem submitting your form"
 });
 }
+form.addEventListener("submit", handleSubmit)
+
+
 var form = document.getElementById("contactForm");
   
 async function handleSubmit(event) {
@@ -113,7 +118,7 @@ fetch(event.target.action, {
   }
 }).then(response => {
   if (response.ok) {
-    status.innerHTML = "Thanks for your submission!";
+    status.innerHTML = "Merci pour votre réaction!";
     form.reset()
   } else {
     response.json().then(data => {
@@ -190,7 +195,24 @@ $('.form-popup-bg').on('click', function(event) {
 
 
 
-
+var popu = $('.popu');
+$(window).scroll(function(){
+  
+/*    
+ 	var show = $(document).scrollTop() / (600);
+    popup.css('opacity', show);  
+  */
+  
+  if($(window).scrollTop() > $(document).height()/4){
+    popu.addClass('popu_show'); 
+  };
+  
+  $( '.close' ).click(function() {
+  		popu.css('display', 'none');
+	});
+  
+  
+});
 
 
 
