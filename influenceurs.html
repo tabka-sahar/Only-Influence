@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- External CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/select2/select2.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,73 +33,34 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script defer src = "./script.js"></script>
+
     
 
-    <script defer src = "./script.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
-	<nav style = "background-color:white;" id="header-navbar" class="navbar navbar-expand-lg py-4">
        
-       
+    <header>
+        <div class="header">
+          <nav class="navigation">
+            <div class="navbar-right">
+              <a style = "font-family: HelveticaNeue-Bold;font-size:17px;color:#3a0949"href="index.php">Accueil</a>
+              <a style = "font-family: HelveticaNeue-Bold;font-size:17px;color:#3a0949" href="#features">Marque</a>
+              <a style = "font-family: HelveticaNeue-Bold;font-size:17px;color:#3a0949" href="influenceurs.html">Influenceurs</a>
+              <a style = "font-family: HelveticaNeue-Bold;font-size:17px;color:#3a0949" href="#portfolio">Collaborations</a>
+              <a style = "font-family: HelveticaNeue-Bold;font-size:17px;color:#3a0949" href="#btnopenForm">Contact</a>
+            </div>
+          </nav>
         
         <div class="container">
-            <img  style = "width: 15%;margin-left: -20%;"src="img/logo 2.png" alt="">
-            <!-- <div style = "margin-left: 60%" class="box">
-                <div 
-                class="allTime">
-                <h4>Evènement commence dans </h4>
-                
-    
-    
-    
-                    <div class="wp days"></div>
-                    <div class="wp hrs"></div>
-                    <div class="wp min"></div>
-                    <div class="wp sec"></div>
-                </div>
-                <button  type="button" class="btn btn-outline-primary">s'inscrire</button>
-    
-    
-            </div> -->
+            <img  style = "width: 17%;margin-left: -20%;margin-top:3%"src="img/logo 2.png" alt="">
+         
     
             
-            <a class="navbar-brand d-flex align-items-center text-white" href="/">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="lnr lnr-menu"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-nav-header">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#qui">Qui sommes nous</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li> -->
-                  
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#features">Marque</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reservation">Contact</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a id="side-search-open" class="nav-link" href="#">
-                            <span class="lnr lnr-magnifier"></span>
-                        </a>
-                    </li> -->
-                     <!-- <li class="nav-item only-desktop">
-                        <a class="nav-link" id="side-nav-open" href="#">
-                            <span class="lnr lnr-menu"></span>
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
+          
         </div>
-    </nav>
+    </div>
+    </header>
     
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" id="side-nav-close">&times;</a>
@@ -136,9 +98,14 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="text-box">
- <h1 style = "margin-top:98%;  font-family: CMU-serif; font-size: 60px;" id = "collaborer" class="display-1 fw-bold aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
-        Notre expertise :     <h4 style = "margin-top:3%;font-family: HelveticaNeue-Bold; font-size:30px;" id = "collab">
-            la conception de stratégies d'influence impactantes et  la formation dans le domaine de l'influence et de la création de contenu.
+ <h1 style = "margin-top:98%; font-family: HelveticaNeue-Bold;;  font-size: 80px;" id = "collaborer"  data-aos-duration="4000" class="display-1 fw-bold aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+        Notre expertise:<h4 style = "margin-top:3%; font-size:30px; 
+        
+
+   
+        font-family: HelveticaNeue-Bold;
+      " data-aos="fade-up" data-aos-duration="1000" id = "collab">
+            La conception de stratégies d'influence impactantes et  la formation dans le domaine de l'influence et de la création de contenu.
     
           </h4>
                     </div>
@@ -158,153 +125,110 @@
             </div>
         </div>
     </section>
-<!-- 
-<div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-8 text-center">
-
 
  
-
-
-      <h1 style = "margin-top:21%;font-family: helvetica,bold,Nue;font-size: 60px;" id = "collaborer" class="display-1 fw-bold aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
-        Notre expertise :     <h4 style = "margin-top:3%;font-family: helvetica,bold,Nue;font-size: 30px;" id = "collab">
-            la conception de stratégies d'influence impactantes et  la formation dans le domaine de l'influence et de la création de contenu.
     
-          </h4>
-      </h1>
-  
+        <div data-aos="fade-up" data-aos-duration="1500" class = "formations">
+        <!-- <h1 data-aos="fade-up" class = "center subtitle-width" id = "collaborer" style = "font-family: CMU-serif; font-size:40px;margin-top: -15%;">Only Influence Academy</h1> -->
+        <h2 style = "    margin-bottom: 15px;
+        font-size: 30px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family:   HelveticaNeue-Bold;
+        text-align: center;
+        letter-spacing: 5px;
+        line-height: 1.3;
+       " class="section-title">Only Influence academy</h2>
 
-     
-      <p >
-       
-      <p class="mb-7 mb-md-9 aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
-   
-      </p>
-      
-
-    </div>
-  </div> -->
-  
-
-
-
-
+        <br>
+        <br>
+        <br>
  
 
-<!-- <div class="container-fluid bg-light pt-5">
-    <h2 class="center subtitle-width">
-        Comment ça marche ?
-        </h2>
-        <h6 class="center subtitle-width bmargbottom text-block">
-        Les influenceurs utilisent Only Influence pour trouver et participer aux campagnes social media des marques les plus influentes <br> dans le monde et produisent du contenu authentique en échange de produits qu'ils/elles veulent tester.
-        </h6>
-        </div> -->
-        <br>
-        <br>
-        <br>
-        <h1 class = "center subtitle-width" id = "collaborer" style = "font-family: helvetica; font-size:40px;margin-top: -15%;">Only Influence Academy</h1>
+         <main class="page-contenta">
+         <div class="carda" id = "cardaz">
+         <div class="contenta">
+         <h2 class="titlea" >Les clés pour devenir influenceurs(euses) </h2>
 
-
- 
-
-        <!-- about -->
-
-        <!-- end about -->
-           
-           <div class="content">
-
-              <!-- card -->
-              <div class="card">
-
-         
-                <div class="icon"><i class="material-icons md-36">spatial_tracking</i></div>
-                <p class="title">Les clés pour devenir influenceurs(euses)</p>
-                <div class="text">
-                    <div class = "di">
-                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
-                    <ul>
-                        <li>
-                            Qu'est ce qu'un influenceur?
-                        </li>
-                        <li>
-Définir son projet                            </li>
-<li>
-Créer une ligne éditoriale et connaitre les spécificités des differents réseaux
+         <div class = "di">
+            <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
+            <ul>
+                <li  style = " font-family: var(--font-serif);">
+                    - Qu'est ce qu'un influenceur?
+                </li>
+                <li  style = " font-family: var(--font-serif);">
+- Définir son projet                            </li>
+<li  style = " font-family: var(--font-serif);">
+- Créer une ligne éditoriale et connaitre les spécificités des differents réseaux
 </li>
-                    </ul>
-                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
-                    <ul>
-                        <li>Construire sa stratégie </li>
-                        <li>Booster son compte (+ analyse de l'audience)</li>
-                        <li>Gérer ses partenariats</li>
-                    </ul>
+            </ul>
+            <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
+            <ul>
+                <li  style = " font-family: var(--font-serif);">- Construire sa stratégie </li>
+                <li  style = " font-family: var(--font-serif);"> - Booster son compte (+ analyse de l'audience)</li>
+                <li  style = " font-family: var(--font-serif);">- Gérer ses partenariats</li>
+            </ul>
 
-             </div>
-             <!-- <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button> -->
-            </div>
-             
-          </div>
-              <!-- end card -->
-              <!-- card -->
-              <div class="card">
-                 
-                <div class="icon"><i class="material-icons md-36">tap_and_play</i></div>
-                <p class="title">Créer des contenus pour les réseaux sociaux</p>
-                <div class="text">
-                    <div class = "di">
-                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
-                    <ul>
-                        <li>
-                            Formation Instagram
-                        </li>
-                        <li>
-                            Formation TikTok                           </li>
-<li>
-    Formation Youtube</li>
-                    </ul>
-                    <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
-                    <ul>
-                        <li>Analyser son contenu (statisqtiques / outils) </li>
-                        <li>Tips et astuces pour créer du contenu à partir d'un smartphone</li>
-                        <li>Formation de Bouncy</li>
-                    </ul>
-             </div>
-             <!-- <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button> -->
+     </div>
+         <!-- <p class="copya">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p> -->
+         <!-- <button class="btn">View Trips</button> -->
+         </div>
+         </div>
+         <div class="carda" id = "cardazi">
+         <div class="contenta">
+     <h2 class="titlea">Créer des contenus pour les réseaux sociaux</h2>
 
-            </div>
-             
-          </div>
-              <!-- end card -->
-              <!-- card -->
-              <div class="card">
-                 
-                <div class="icon"><i class="material-icons md-36">app_shortcut</i></div>
-                <p class="title">Le marketing d'influence en Tunisie</p>
-                <div class="text">
-                    <div class = "di">
-                    <ul>
-                        <li>
-                            Définir le marketing d'influence et étude du marché tunisien
-                        </li>
-                        <li>
-Connaitre les plateformes de gestion entre marques et influenceurs et les agences de marketing d'influence                        </li>
-<li>
-Les relations entre les marques et les influenceurs
-</li>
-                    </ul>
-                
-             </div>
-             <!-- <button style = "background-color: #ab4deb; border-radius: 100px" ><a>S'inscrire </a></button> -->
-
-            </div>
-             
-          </div>
-              <!-- end card -->
-           
+         <div class = "di">
+            <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie débutant</p>
+            <ul>
+                <li  style = " font-family: var(--font-serif);">
+                     - Formation Instagram
+                </li>
+                <li  style = " font-family: var(--font-serif);">
+                   - Formation TikTok                           </li>
+<li  style = " font-family: var(--font-serif);">
+- Formation Youtube</li>
+            </ul>
+            <p style = "color: #e43c9e;font-size:120%"class="font-weight-light my-3">Partie avancée</p>
+            <ul>
+                <li  style = " font-family: var(--font-serif);"> - Analyser son contenu (statisqtiques / outils) </li>
+                <li  style = " font-family: var(--font-serif);">- Tips et astuces pour créer du contenu à partir d'un smartphone</li>
+                <li  style = " font-family: var(--font-serif);"> - Formation de Bouncy</li>
+            </ul>
+     </div>
+         <!-- <p class="copya">Plan your next beach trip with these fabulous destinations</p> -->
+         <!-- <button class="btn">View Trips</button> -->
+         </div>
+         </div>
+         <div class="carda" id = "cardaze">
+            <div class="contenta">
+            <h2 class="titlea">Le marketing d'influence en Tunisie</h2>
+            <br>
         
-           
-           </div>
-    
+            <div class = "di">
+                <p></p>
+                <ul>
+                    <li  style = " font-family: var(--font-serif);">
+                        -  Définir le marketing d'influence et étude du marché tunisien
+                    </li>
+                    <li  style = " font-family: var(--font-serif);">
+ - Connaitre les plateformes de gestion entre marques et influenceurs et les agences de marketing d'influence                        </li>
+<li  style = " font-family: var(--font-serif);">
+- Les relations entre les marques et les influenceurs
+</li>
+                </ul>
+            
+         </div>
+            <!-- <p class="copya">Plan your next beach trip with these fabulous destinations</p> -->
+            <!-- <button class="btn">View Trips</button> -->
+            </div>
+            </div>
+       
+        
+         </main>
+         <!-- partial -->
+        </div>
+         
         
         
         
@@ -316,187 +240,310 @@ Les relations entre les marques et les influenceurs
 
     <br></br>
 
-<section id="portfolio" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-           
-            <div class="title-wrap">
-                <h2 class="section-title">Nos <b>exemples de collaborations</b> impressionnante</h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
-            </div>
-           
-            <div class="row">
-         
-                <div class="col-md-12 portfolio-holder mt-3">
-                 
+    <section id="portfolio" class="bg-white">
+        <div class="container">
+            <div class="section-content">
                
-                  
-                 
-                    <div class="grid-portfolio">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
+                <div class="title-wrap">
+                    <h2 style = "    margin-bottom: 15px;
+                    font-size: 30px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-family:   HelveticaNeue-Bold;
+                    text-align: center;
+                    letter-spacing: 5px;
+                    line-height: 1.3;
+                   " class="section-title" data-aos="fade-up" data-aos-duration="2000">Nos <b>Collaborations</b></h2>
+    
+                    <!-- <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p> -->
+                </div>
+                <br>
+                <br>
+                <br>
+               
+                <div class="row">
+             
+                    <div class="col-md-12 portfolio-holder mt-3">
                      
-                        <div class="grid-item minimalism" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Camera</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                       
-                       
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Flower</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                    
-                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Breakfast</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                     
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Chair</h4>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                       
                      
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
+                        <div class="grid-portfolio">
+                            <div class="grid-sizer"></div>
+                            <div class="gutter-sizer"></div>
+                         
+                            <div class="grid-item minimalism" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="https://www.socialstation.it/wp-content/uploads/2020/03/74209588-6930-4C4C-A6B9-BB5BB9895670.jpeg" alt="portfolio-img" class="portfolio-item">
+                                    <div class="grid-info">
+                                      
+                                        <div class="grid-title">
+                                            <img src="../Only-Influence/img/logo-uriage-300x200.png" alt="">
+                                                       <p style = "    font-family: Libre Baskerville, Times New Roman, Times, serif;color:#fff;
+                                                       font-size: 14px;
+                                                       font-style: italic;">Campagne Hyséac</p>      
+                                           </div>
                                     </div>
-                                    <div class="grid-title">
-                                        <h4>Hidden Book</h4>
-                                    </div>
+    
                                 </div>
-
                             </div>
-                        </div>
-                      
-                     
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
+                            <div class="grid-item vintage" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="img/boga.jpg" alt="portfolio-img" class="portfolio-item">
+    
+                                    <div class="grid-info">
+                                
+                                        <div class="grid-title">
+                                            <img style = "width: 100%; height:40%" src="../Only-influence/img/boga logo.png" alt="">
+                                            <p style = "    font-family: Libre Baskerville, Times New Roman, Times, serif;
+    font-size: 14px;
+    font-style: italic;margin-top: 90%;color:#fff">Campagne Boga coktails</p>
+                                        </div>
                                     </div>
-                                    <div class="grid-title">
-                                        <h4>Red</h4>
-                                    </div>
+    
                                 </div>
-
                             </div>
+                           
+                           
+                            <div class="grid-item vintage" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="https://i.ytimg.com/vi/6H2FJpWFYAA/maxresdefault.jpg" alt="portfolio-img" class="portfolio-item">
+                                    <div class="grid-info">
+                                     
+                                        <div class="grid-title">
+                                            <img src="https://www.bio-oil.com/assets/logos/Bio-Oil_logo-da4175b4cf7f217f85c67a8ceca28d107a5ad73e90066d5053b19e36a6ce1c70.svg" alt="">
+                                            <p style = "  margin-bottom: 60%;  font-family: Libre Baskerville, Times New Roman, Times, serif;
+                                            font-size: 14px;
+                                            font-style: italic;color:#fff">Campagne</p>
+                                        </div>
+                                      
+                                    </div>
+    
+                                </div>
+                            </div>
+                       
+                            <div class="grid-item creative grid-item-height" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="https://sf2.bibamagazine.fr/wp-content/uploads/biba/2020/02/10-bonnes-raisons-boire-beaucoup-eau.png" alt="portfolio-img" class="portfolio-item">
+                                    <div class="grid-info">
+                                     
+                                        <div class="grid-title">
+                                            <img width = 70 src="/img/logo-safia.png" alt="">
+                                            <p style = "    font-family: Libre Baskerville, Times New Roman, Times, serif;
+                                            font-size: 14px;
+                                            font-style: italic;color:#fff">SAFIA</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                         
+                            <div class="grid-item creative" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="https://sf2.bibamagazine.fr/wp-content/uploads/biba/2020/02/10-bonnes-raisons-boire-beaucoup-eau.png" alt="portfolio-img" class="portfolio-item">
+                                    <div class="grid-info">
+                               
+                                        <div class="grid-title">
+                                            <p style = "    font-family: Libre Baskerville, Times New Roman, Times, serif;
+                                            font-size: 14px;
+                                            font-style: italic;color:#fff">SAFIA</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                          
+                         
+            
+                          
+                         
+                            <div class="grid-item creative" data-aos="fade-up">
+                                <div class="grid-item-wrapper">
+                                    <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
+                                    <div class="grid-info">
+                                        <div class="grid-link d-flex justify-content-center">
+                                            <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
+                                                <span class="lnr lnr-move"></span>
+                                            </a>
+                                            <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                                <span class="lnr lnr-link"></span>
+                                            </a>
+                                        </div>
+                                        <div class="grid-title">
+                                            <h4>Red</h4>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                          
                         </div>
                       
                     </div>
-                  
+                 
                 </div>
-             
+            </div>
+        </div>
+    </section>
+    <div  style = " background: #bf95b9;padding:-2%;width:100%;height:203px;">
+
+        <br>
+        <br>
+        <br>
+      
+        
+    <div id="logos-home-page">
+        <h2  style = "    margin-bottom: 55px;
+        
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family:   HelveticaNeue-Bold;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top:-3%;
+    
+    color:#fff;
+    
+    " class="center subtitle-width">
+        ILS NOUS FONT CONFIANCE
+        </h2>
+        <div stle = "margin-top:-10%" class="slider">
+            <div class="slide-track">
+                <div class="slide"><img class="alignnone size-full wp-image-13024" src="../Only-Influence/img/boga logo.png" alt="" width="150" height="100" /></div>
+                <div class="slide"><img class="alignnone size-medium wp-image-13023" src="../Only-Influence/img/logo-cristaline.png" alt="" width="150" height="100" /></div>
+                <div class="slide"><img class="alignnone size-medium wp-image-13022" src="../Only-Influence/img/logo-safia.png"  alt="" width="150" height="100" /></div>
+                <div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/LOGO Marriott-02.png" alt="" width="150" height="100" /></div>
+                <div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/logo-uriage-300x200.png" alt="" width="150" height="100" /></div>
+                <div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/Fichier 1.png" alt="" width="150" height="100" /></div>
+    
+    
             </div>
         </div>
     </div>
-</section>
-<h2 class="center subtitle-width">
-    IL NOUS FONT CONFIANCE
-    </h2>
-    <br>
-    <br>
-    <br>
-<div id="logos-home-page">
-	<div class="slider">
-		<div class="slide-track">
-			<div class="slide"><img class="alignnone size-full wp-image-13024" src="../Only-Influence/img/boga logo.png" alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13023" src="../Only-Influence/img/logo-cristaline.png" alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13022" src="../Only-Influence/img/logo-safia.png"  alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/LOGO Marriott-02.png" alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/logo-uriage-300x200.png" alt="" width="200" height="150" /></div>
-			<div class="slide"><img class="alignnone size-medium wp-image-13021" src="../Only-Influence/img/Fichier 1.png" alt="" width="200" height="150" /></div>
-
-
-		</div>
-	</div>
-</div>
+    </div>
 <br>
 
 <br>
 <br>
 
-<h1 class="center subtitle-width">
-   <b>Envie de collaborer avec vos marques préférées ?</b> 
-    <u> <a href = "" id="btnOpenForm" >Écrivez-nous ! </a> </u>
+
+
+<footer class=" footer-section " >
+    <div  id = "cont">
+    <img style = "width: 2000px;
+    height: 366px;" src="../Only-Influence/img/Footer.png" alt="">
     
-    </h1>
+    <h1 class="logo" id = "tt"style = "    font-family: HelveticaNeue-Bold;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-left: -15%;
+    margin-top: -15%; " >ENVIE  DE <br>
+        <button style = "      margin-left: 424%;
+        margin-top: 20%;font-family: HelveticaNeue-Bold;background-color: #bf95b9;font-size:30px;color :#f3eef5" id="btnOpenFormm" class="btn btn-default popup-btn closeftr"> Écrivez-nous ! <a href = "#"></a>
+    
+        </button>
+        <h1 class="logo" style = "    margin-top: -51%;
+        margin-left: -20%; font-family: HelveticaNeue-Bold;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;">AVEC</h1>
+          
+         
+   
+          
+        
+          <h1 class="logo" style = "    margin-top: -21%;
+          margin-left: 40%; font-family: HelveticaNeue-Bold;
+      font-weight: bold;
+      font-size: 45px;
+      color: #fff;
+      text-align: center;">VOS</h1>
+          <h1 class="logo" style = "    margin-top: -21%;
+          margin-left: 85%; font-family: HelveticaNeue-Bold;
+      font-weight: bold;
+      font-size: 45px;
+      color: #fff;
+      text-align: center;">MARQUES</h1>
+            
+         
+          <h1 class="logo" style = "    margin-top: -46.5%;
+          margin-left: 83%; font-family: HelveticaNeue-Bold;
+      font-weight: bold;
+      font-size: 45px;
+      color: #fff;
+      text-align: center;">COLLABORER</h1>
+            
+            <h1 class="logo" style = "    margin-top: 35%;
+            margin-left: 24%; font-family: HelveticaNeue-Bold;
+        font-weight: bold;
+        font-size: 45px;
+        color: #fff;
+        text-align: center;">PRÉFÉRÉES  ?</h1>
+  
+   
+      
+    </div>
+
+ 
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <!-- <p>Copyright &copy; 2022, All Right Reserved <a href="https://codepen.io/anupkumar92/">OnlyInfluence</a></p> -->
+                        
+                  
+                    </div>
+                    
+	
+
+                    
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                    
+                        <div class="social-iconss">
+                 
+                            <a href="#" class="icon fab fa-facebook-f">
+                              <span>Facebook</span>
+                            </a>
+                            <a href="#" class="icon fab fa-instagram">
+                              <span>Instagram</span>
+                            </a>
+                           
+                         
+                            <h5 style = "margin-right: -18%;font-family: CMU-serif,bold;font-size: 21px;">+21629171745 | hello@onlyinfluence.com | &copy; OnlyInfluence 2022  </h5>
+
+                         
+                          </div>
+                          <img src="../Only-Influence/img/footerlogo.png" style = "width:15%;margin-left:150%;margin-top: -42%;" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<ul class="social-media-container">
+	<li class="social-media blog">
+		<i class="fab fa-facebook-f"></i>
+		<a href="#" target="_blank">Follo me on facebook</a>
+	</li>
+	<li class="social-media pinterest">
+		<i class="fab fa-pinterest"></i>
+		<a href="https://www.pinterest.com/fr/" target="_blank">Follow me on Pinterest</a>
+	</li>
+
+	<li class="social-media instagram">
+		<i class="fab fa-instagram"></i>
+		<a href="https://www.instagram.com" target="_blank">Follow me on Instagram</a>
+	</li>
+
+</ul>
   
     <div class="form-popup-bg">
         <div class="form-container">
@@ -538,172 +585,8 @@ Les relations entre les marques et les influenceurs
     
 
 
-    
-    
-
-
-        <!-- <div class="container-fluid bg-light pt-5">
-            <h2 class="center subtitle-width">
-                Comment ça marche ?
-                </h2>
-                <h6 class="center subtitle-width bmargbottom text-block">
-                Les influenceurs utilisent Only Influence pour trouver et participer aux campagnes social media des marques les plus influentes <br> dans le monde et produisent du contenu authentique en échange de produits qu'ils/elles veulent tester.
-                </h6>
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                   
-                </div>
-                <div class="row pb-3">
-                    <div class="col-md-4 mb-4">
-                        <div class="card border-0 mb-2">
-                            <img class="img-responsive center-block" alt="Demande le produit que tu aimerais tester" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/insta_franklin_2-76737ab7672e3fcf8cbf4e5104cf0787d55f926640827c92c2a1160a471a6ee2.jpg">
-                            <div class="card-body bg-white p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <a style = "    margin-top: -15%;
-                                    margin-left: 42%;" class="w3-button w3-indigo" href="">1</a>
-                                </div>
-                                <h5 >Demande le produit que tu aimerais tester </h5>
-
-                                <p>A ton inscription, tu reçois 5 crédits que tu peux échanger contre les produits de ton choix sur le Free Store.</p> -->
-                                <!-- <div class="d-flex">
-                                    <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                    <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                    <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                                </div> -->
-                            <!-- </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card border-0 mb-2">
-                            <img class="img-responsive center-block" alt="Reçois les produits chez toi" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/02_tuto-e806cf2121bdb3097686f949cb8f094d38191159c90e51ca421c30afa151a01f.jpg">
-                            <div class="card-body bg-white p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <a style = "    margin-top: -15%;
-                                    margin-left: 42%;" class="w3-button w3-indigo" href="">2</i></a>
-                                </div>
-                                <h5 >Recois les produits chez toi</h5>
-
-                                <p>Une fois que la marque à validé ta demande, nous t'enverrons le produit directement chez toi. Tu auras 21-28 jours pour créer et poster ton contenu.</p>                                <div class="d-flex">
-                                 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card border-0 mb-2">
-                            <img srcset="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/03_tuto-2d36d1dcae28ad7c7497b697bad52ab74a15fe819bdc77bfd8832daf05d587a5.jpg 700w" class="img-responsive center-block" alt="Crée du contenu authentique sur Instagram et/ou sur YouTube" style="width: 100%" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/03_tuto-2d36d1dcae28ad7c7497b697bad52ab74a15fe819bdc77bfd8832daf05d587a5.jpg">
-                            <div class="card-body bg-white p-4">
-                                <div class="d-flex align-items-center mb-3">
-                                    <a  style = "    margin-top: -15%;
-                                    margin-left: 42%;" class="w3-button w3-indigo" href="">3</a>
-                                </div>
-                                <h5 >Créer du contenu authentique sur les réseaux sociaux ou participer à des évènements </h5>
-
-                                <p>Une fois que tu auras soumis ton post dans Only Influence, tu récupèreras ton crédit et tu pourras le dépenser pour tester un autre produit !</p>                                <div class="d-flex">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div style = "margin-left: 15%"ss="vpadtop blocA">
-            <div class="row picto-section">
-            <div class="column mpadright mpadleft">
-            <div class="picture-center gmargbottom"><img class="img-responsivee center-block" alt="Toutes tes collaborations dans une seule application" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/join/picto_allinone-b02ec091754dd02b1cf265f1c5bc23e02b52068063c8111d2ad81ca3201e314c.png"></div>
-            <p style = "margin-left: -40%;" class="grey-light center pixel18 cmargbottom">
-            Toutes tes  <br></br> collaborations dans  <br></br> une seule application
-            </p>
-            </div>
-            <div class="column mpadright mpadleft">
-            <div class="picture-center gmargbottom"><img class="img-responsivee center-block" alt="Associe-toi aux marques les plus populaires" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/join/picto_pinkstar-b60fb81c6ac3b9c7189822f9a53f166a8eca2882738aab988f6d7ce7b3f72ab1.png"></div>
-            <p style = "margin-left: -40%;" class="grey-light center pixel18 cmargbottom">
-            Associe-toi  <br></br> aux marques les plus  <br></br> populaires
-            </p>
-            </div>
-            <div class="column mpadright mpadleft">
-            <div class="picture-center gmargbottom"><img class="img-responsivee center-block" alt="Des campagnes de gifting et rémunérées" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/join/picto_paidgift-064e84870546c812a378dfbfaf172891c093766c3db195314bb13a1d8fffd11d.png"></div>
-            <p style = "margin-left: -40%;" class="grey-light center pixel18 cmargbottom">
-            Des campagnes de  <br></br>gifting et rémunérées
-            </p>
-            </div>
-            <div class="column mpadright mpadleft">
-            <div class="picture-center gmargbottom"><img class="img-responsivee center-block" alt="Une communauté de plus de 30 000 influenceurs" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/join/picto_pinkbubble-9c909be99cd695b66c5c60c7ed19c514cfd5e96a66b7fe2b3d6a26ed32ebae44.png"></div>
-            <p style = "margin-left: -40%;" class="grey-light center pixel18 cmargbottom">
-            Une communauté de <br></br> plus de 1000 influenceurs
-            </p>
-            </div>
-            <div class="column mpadright mpadleft">
-            <div class="picture-center gmargbottom"><img class="img-responsivee center-block" alt="Participe à des événements de marques exclusifs" src="https://d22nxggd4m5y99.cloudfront.net/production/assets/home/join/picto_vox_pink-2dac2f8922239b38882b36307c7b6f59fcb6b8670e097a658f29db13e98924c0.png"></div>
-            <p style = "margin-left: -40%; font-size: 25px;" class="grey-light center pixel18 cmargbottom">
-            Participe à des  <br></br> événements de marques exclusifs
-            </p>
-            </div>
-            </div>
-            <div class="picto-section">
-            </div>
-            </div> -->
-
-
-
-
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
  
-	<!-- Blog Section -->
 
-<!-- End of Blog Section -->	<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="mb-2">Rejoins la #OnlyInfluencefamily</h2>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p> -->
-                    <a class="btn btn-outline-primary btn-lg">Rejoindre</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section--></div>
-<footer class="mastfoot my-3">
-    <div class="inner container">
-         <div class="row">
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		
-         	</div>
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; Only Influence <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
-         	</div>
-           
-            <div class="col-lg-4 col-md-12">
-            	<nav class="nav nav-mastfoot justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-facebook-f"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-youtube"></i>
-	                </a>
-	            </nav>
-            </div>
-            
-        </div>
-    </div>
-</footer>	<!-- External JS -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="vendor/bootstrap/popper.min.js"></script>
 	<script src="vendor/bootstrap/bootstrap.min.js"></script>
@@ -714,7 +597,51 @@ Les relations entre les marques et les influenceurs
 	<script src="vendor/lightcase/lightcase.js"></script>
 	<script src="vendor/waypoints/waypoint.min.js"></script>
 	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 
+
+	 <script>
+         function closeForm() {
+$('.form-popup-bg').removeClass('is-visible');
+}
+
+$(document).ready(function($) {
+
+/* Contact Form Interactions */
+$('#btnOpenForm').on('click', function(event) {
+  event.preventDefault();
+
+  $('.form-popup-bg').addClass('is-visible');
+});
+$('#btnOpenFormm').on('click', function(event) {
+  event.preventDefault();
+
+  $('.form-popup-bg').addClass('is-visible');
+});
+$('#btnOpenFormmm').on('click', function(event) {
+  event.preventDefault();
+
+  $('.form-popup-bg').addClass('is-visible');
+});
+$('#btnOpenFormmmm').on('click', function(event) {
+  event.preventDefault();
+
+  $('.form-popup-bg').addClass('is-visible');
+});
+
+
+
+
+  //close popup when clicking x or off popup
+$('.form-popup-bg').on('click', function(event) {
+  if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+    event.preventDefault();
+    $(this).removeClass('is-visible');
+  }
+});
+
+
+
+});
+     </script>
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
     <script>
@@ -727,9 +654,12 @@ $(document).ready(function($) {
   /* Contact Form Interactions */
   $('#btnOpenForm').on('click', function(event) {
     event.preventDefault();
+    $('#btnOpenFormmmm').on('click', function(event) {
+    event.preventDefault();
+    
 
     $('.form-popup-bg').addClass('is-visible');
-  });
+  })});
   
   
 
@@ -747,6 +677,22 @@ $(document).ready(function($) {
   
   });
   
+    </script>
+    <script>
+        var logoElement = $('footer .logo');
+
+$(window).scroll(function() {
+  
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 450) {
+     
+       $(logoElement).addClass('show');
+     
+   } else if($(logoElement).hasClass('show') && $(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+     
+      $(logoElement).removeClass('show');
+     
+   }
+});
     </script>
    
 

@@ -71,15 +71,15 @@ $('.popup-btn').click(function(){
 //   "Please enter a valid email address");
 
 
-var form = document.getElementById("demoForm");
+var formm = document.getElementById("demoForm");
   
-async function handleSubmit(event) {
+async function handleSubmitt(event) {
 event.preventDefault();
 var status = document.getElementById("status");
 var data = new FormData(event.target);
 fetch(event.target.action, {
 
-  method: form.method,
+  method: formm.method,
   body: data,
   headers: {
       'Accept': 'application/json'
@@ -87,7 +87,7 @@ fetch(event.target.action, {
 }).then(response => {
   if (response.ok) {
     status.innerHTML = "Téléchargement reussi!";
-    form.reset()
+    formm.reset()
   } else {
     response.json().then(data => {
       if (Object.hasOwn(data, 'errors')) {
@@ -101,14 +101,14 @@ fetch(event.target.action, {
   status.innerHTML = "Oops! There was a problem submitting your form"
 });
 }
-form.addEventListener("submit", handleSubmit)
+formm.addEventListener("submit", handleSubmitt)
 
 
 var form = document.getElementById("contactForm");
   
 async function handleSubmit(event) {
 event.preventDefault();
-var status = document.getElementById("statuss");
+var statuss = document.getElementById("statuss");
 var data = new FormData(event.target);
 fetch(event.target.action, {
   method: form.method,
@@ -118,19 +118,19 @@ fetch(event.target.action, {
   }
 }).then(response => {
   if (response.ok) {
-    status.innerHTML = "Merci pour votre réaction!";
+    statuss.innerHTML = "Merci pour votre réaction!";
     form.reset()
   } else {
     response.json().then(data => {
       if (Object.hasOwn(data, 'errors')) {
-        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        statuss.innerHTML = data["errors"].map(error => error["message"]).join(", ")
       } else {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        statuss.innerHTML = "Oops! There was a problem submitting your form"
       }
     })
   }
 }).catch(error => {
-  status.innerHTML = "Oops! There was a problem submitting your form"
+  statuss.innerHTML = "Oops! There was a problem submitting your form"
 });
 }
 
@@ -177,6 +177,11 @@ $('#btnOpenFormmm').on('click', function(event) {
 
   $('.form-popup-bg').addClass('is-visible');
 });
+$('#btnOpenFormmmm').on('click', function(event) {
+  event.preventDefault();
+
+  $('.form-popup-bg').addClass('is-visible');
+});
 
 
 
@@ -215,8 +220,38 @@ $(window).scroll(function(){
 });
 
 
+// Trigger CSS animations on scroll.
+// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
+
+// Looking for a version that also reverses the animation when
+// elements scroll below the fold again?
+// --> Check https://codepen.io/bramus/pen/vKpjNP
 
 
 
 
+var logoElement = $('footer .logo');
+
+$(window).scroll(function() {
+
+if($(window).scrollTop() + $(window).height() > $(document).height() - 450) {
+
+ $(logoElement).addClass('show');
+
+} else if($(logoElement).hasClass('show') && $(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+
+$(logoElement).removeClass('show');
+
+}
+});
+AOS.init({duration:2000});
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 200) {
+    $('#qui').fadeIn();
+  } else {
+    $('#qui').fadeOut();
+  }
+});
 
